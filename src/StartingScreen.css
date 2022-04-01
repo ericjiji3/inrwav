@@ -1,0 +1,24 @@
+.starting-screen{
+    height: 100%;
+    overflow: hidden;
+}
+.starting-screen .scrolling-image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+    background: url('./pics/space-background.webp') repeat-x;
+    animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(100%);
+    }
+    100% {
+      transform: translate(0%); /* The image width */
+    }
+  }
