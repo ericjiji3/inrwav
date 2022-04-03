@@ -1,6 +1,7 @@
 import React, {Component, useEffect} from 'react';
 import MainMenu from './MainMenu.js';
 import styles from "./StartingScreen.css";
+import logo from "./pics/inrwav-logo.png";
 
 
 class StartingScreen extends Component{
@@ -18,7 +19,9 @@ class StartingScreen extends Component{
     }
     
     componentDidMount(){
-        document.addEventListener('click', this.clickedFunction)
+        setTimeout(() =>{
+            document.addEventListener('click', this.clickedFunction)
+        }, 3000)
     }
     componentWillUnmount(){
         document.removeEventListener('click', this.clickedFunction)
@@ -35,10 +38,12 @@ class StartingScreen extends Component{
         } else{
             return(
                 <div className="starting-screen">
-                    <div className="scrolling-image">
-                        <h2>INRWAV</h2>
-                        <h3>...Click to continue...</h3>
+                    <div className="scrolling-image"></div>
+                    <div className="logo-description">
+                        <img src={logo} alt="oops!"/>
+                        <h2>...Click to Continue...</h2>
                     </div>
+                    
                 </div>
             )
         }
