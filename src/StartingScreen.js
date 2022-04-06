@@ -9,9 +9,16 @@ class StartingScreen extends Component{
         super(props)
 
         this.state = {
-            clicked: false
+            clicked: false,
+            logoPosition: 0
         }
+        this.imgRef = React.createRef();
+    }
 
+    adjustLogoPosition = () => {
+        let logoWidth = this.imgRef.current.clientWidth;
+        let position = -((window.innerWidth/2) + (logoWidth/2));
+        this.setState({logoPosition: position})
     }
 
     clickedFunction = (e) => {
@@ -19,11 +26,15 @@ class StartingScreen extends Component{
     }
     
     componentDidMount(){
+        window.addEventListener('load', this.adjustLogoPosition);
+        window.addEventListener('resize', this.adjustLogoPosition);
         setTimeout(() =>{
             document.addEventListener('click', this.clickedFunction)
-        }, 3000)
+        }, 6000)
     }
     componentWillUnmount(){
+        window.removeEventListener('load', this.adjustLogoPosition);
+        window.removeEventListener('resize', this.adjustLogoPosition);
         document.removeEventListener('click', this.clickedFunction)
     }
 
@@ -36,25 +47,22 @@ class StartingScreen extends Component{
                 </div>
             )
         } else{
+            const styles = {
+                imgPosition: {
+                    transform: 'translateX(' + this.state.logoPosition + 'px)'
+                }
+            };
             return(
                 <div className="starting-screen">
                     <div className="scrolling-image"></div>
                     <div className="logo-description">
-                        <img src={logo} alt="oops!"/>
+                        <img className="logo" ref={this.imgRef} src={logo} alt="oops!" style={styles.imgPosition}/>
                         <h2>...Click to Continue...</h2>
                     </div>
                     
                 </div>
             )
         }
-        // return(
-        //     <div className="starting-screen">
-        //         <h2>INRWAV</h2>
-        //         <h3>...press to continue...</h3>
-
-        //         <h2>YOOO U ACTULLAYPRESSED IT</h2>
-        //     </div>
-        // )
     }
 }
 
