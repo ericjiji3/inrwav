@@ -12,15 +12,19 @@
 .starting-screen .logo-description{
     position: absolute;
     left: 0;
-    right: 0;
+    right: 105%;
     top: 40%;
+    transform: translateX(-500);
     margin: 0 auto;
     color: white;
+    animation: logo-animation-horizontal 4s forwards;
 }
 .starting-screen .logo-description .logo{
   width: 10%;
   margin-bottom: 20px;
-  animation: logo-animation-horizontal 3s forwards;
+  /* transform: rotateX(30deg) rotateY(30deg) rotateZ(10deg); */
+  transform-style: preserve-3d;
+  animation: logo-zoom-out-in 4s linear;
 }
 .starting-screen .logo-description h2{
   opacity: 0;
@@ -53,13 +57,13 @@
 
 @keyframes logo-animation-horizontal{
   /* 0%{
-    transform: translateY(0);
-  }
-  50%{
+    transform: translateX(-500);
+  } */
+  /* 50%{
     transform: translateY(15px);
   } */
   100%{
-    transform: translateX(0);
+    right: 0;
     /* transform: translateY(0); */
   }
 }
@@ -69,5 +73,18 @@
   }
   50%{
     transform: translateY(15px);
+  }
+}
+@keyframes logo-zoom-out-in{
+  0%{
+    /* translateX(50px) rotateX(30deg) */
+    transform: scale(.5);
+  }
+  50%{
+    transform: scale(2.5);
+  }
+  100%{
+    /* translateX(50px) rotateX(390deg) */
+    transform: scale(1);
   }
 }

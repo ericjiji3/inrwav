@@ -56,7 +56,7 @@ class StartingScreen extends Component{
                 <div className="starting-screen">
                     <div className="scrolling-image"></div>
                     <div className="logo-description">
-                        <img className="logo" ref={this.imgRef} src={logo} alt="oops!" style={styles.imgPosition}/>
+                        <img className="logo" ref={this.imgRef} src={logo} alt="oops!"/>
                         <h2>...Click to Continue...</h2>
                     </div>
                     
