@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   height: 100%;
+  /* filter: blur(3px); */
+  font-family: 'bold';
 }
 
 .App-logo {

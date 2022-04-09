@@ -30,7 +30,7 @@ class StartingScreen extends Component{
         window.addEventListener('resize', this.adjustLogoPosition);
         setTimeout(() =>{
             document.addEventListener('click', this.clickedFunction)
-        }, 6000)
+        }, 9000)
     }
     componentWillUnmount(){
         window.removeEventListener('load', this.adjustLogoPosition);

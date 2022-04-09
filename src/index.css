@@ -1,3 +1,24 @@
+@font-face{
+  font-family: 'bold';
+  src: url(./fonts/Helvetica-Bold.ttf);
+}
+@font-face{
+  font-family: 'bold-oblique';
+  src: url(./fonts/Helvetica-BoldOblique.ttf);
+}
+@font-face{
+  font-family: 'light';
+  src: url(./fonts/helvetica-light-587ebe5a59211.ttf);
+}
+@font-face{
+  font-family: 'oblique';
+  src: url(./fonts/Helvetica-Oblique.ttf);
+}
+@font-face{
+  font-family: 'helvetica';
+  src: url(./fonts/Helvetica.ttf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
