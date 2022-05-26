@@ -28,6 +28,7 @@ class StartingScreen extends Component{
         
     }
     shatter = () =>{
+        console.log("shatter")
         var pieces = 70,
         speed = 1,
         pieceW = 30,
@@ -37,22 +38,23 @@ class StartingScreen extends Component{
         for (var i = pieces - 1; i >= 0; i--) {
             $('.logo-description').prepend('<div class="piece" style="width:'+pieceW+'px; height:'+pieceH+'px"></div>');
         };
-        gsap.to($('#popup h1'),0.2,{opacity:0});
-        $('.piece').each(function(){
-            var distX = Math.random() * (250 - (-250)) + (-250),	
-                distY = Math.random() * (250 - (-250)) + (-250),
-                rotY  = Math.random() * (720 - (-720)) + (-720),
-                rotX  = Math.random() * (720 - (-720)) + (-720),
-                z = Math.random() * (500 - (-500)) + (-500);
-                gsap.to($(this), speed, {x:distX, y:distY, rotationX:rotX, rotationY:rotY, opacity: 0, z: z});	
-        });
+        // gsap.to($('#popup h1'),0.2,{opacity:0});
+        // $('.piece').each(function(){
+        //     var distX = Math.random() * (250 - (-250)) + (-250),	
+        //         distY = Math.random() * (250 - (-250)) + (-250),
+        //         rotY  = Math.random() * (720 - (-720)) + (-720),
+        //         rotX  = Math.random() * (720 - (-720)) + (-720),
+        //         z = Math.random() * (500 - (-500)) + (-500);
+        //         gsap.to($(this), speed, {x:distX, y:distY, rotationX:rotX, rotationY:rotY, opacity: 0, z: z});	
+        // });
     }
     componentDidMount(){
         window.addEventListener('load', this.adjustLogoPosition);
         window.addEventListener('resize', this.adjustLogoPosition);
         setTimeout(() =>{
             document.addEventListener('click', this.clickedFunction)
-        }, 9000)
+        }, )
+        // 9000
     }
     componentWillUnmount(){
         window.removeEventListener('load', this.adjustLogoPosition);
@@ -63,7 +65,9 @@ class StartingScreen extends Component{
 
     render(){
         if(this.state.clicked){
+            this.shatter();
             return(
+                
                 <div>
                     <MainMenu/>
                 </div>

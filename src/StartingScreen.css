@@ -8,7 +8,7 @@
     position: absolute;
     background-image: url('./pics/space-background.webp');
     animation: slide 40s linear infinite;
-    filter: blur(3px);
+    filter: blur(1.5px);
 }
 .starting-screen .logo-description{
     position: absolute;
@@ -19,15 +19,14 @@
     margin: 0 auto;
     color: white;
     animation: logo-animation-horizontal 4s forwards;
-    filter: blur(1px);
 }
 .starting-screen .logo-description .logo{
   width: 10%;
-  margin-bottom: 20px;
   /* transform: rotateX(30deg) rotateY(30deg) rotateZ(10deg); */
   transform-style: preserve-3d;
   transform: scale(1.5);
   animation: logo-zoom-out-in 4s linear;
+  filter: blur(1px);
 }
 .starting-screen .logo-description h2{
   opacity: 0;
@@ -36,6 +35,8 @@
   margin: auto;
   animation: zoom-in 4s forwards;
   animation-delay: 4s;
+  margin-top: 30px;
+  filter: blur(1.5px);
 }
 
 @keyframes slide {
@@ -49,11 +50,11 @@
 
 @keyframes zoom-in {
     0%{
-      transform: scale(5,5);
+      transform: scale(3);
       opacity: 0;
     }
     100%{
-      transform: scale(1,1);
+      transform: scale(1);
       opacity: 1;
     }
 }
