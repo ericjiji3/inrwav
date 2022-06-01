@@ -1,0 +1,12 @@
+.shatter{
+    animation: shatter 2s linear;
+}
+
+@keyframes shatter{
+    from{
+        width:20%;
+    }   
+    to{
+        width:100%;
+    }
+}

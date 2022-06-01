@@ -1,0 +1,16 @@
+.navbar-container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-container .navbar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    margin: 0;
+}
+.navbar-container .navbar .item{
+    margin: 0 15px;
+}

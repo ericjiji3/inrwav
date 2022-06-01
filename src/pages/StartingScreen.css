@@ -1,3 +1,6 @@
+.container{
+  height: 100%;
+}
 .starting-screen{
     position: relative;
     height: 100%;
@@ -6,7 +9,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url('./pics/space-background.webp');
+    background-image: url('../pics/space-background.webp');
     animation: slide 40s linear infinite;
     filter: blur(1.5px);
 }
