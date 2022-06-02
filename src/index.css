@@ -33,5 +33,5 @@ code {
     monospace;
 }
 html, body, #root, .app{
-  height: 100%
+  /* margin-bottom: 75px; */
 }

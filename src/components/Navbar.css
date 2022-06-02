@@ -14,3 +14,7 @@
 .navbar-container .navbar .item{
     margin: 0 15px;
 }
+.navbar-container .navbar .item a{
+    text-decoration: none;
+    color: black;
+}

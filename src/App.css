@@ -31,6 +31,10 @@
   color: #61dafb;
 }
 
+.jordon-header{
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,3 +43,4 @@
     transform: rotate(360deg);
   }
 }
+@import "~react-image-gallery/styles/css/image-gallery.css";
