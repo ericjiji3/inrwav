@@ -1,0 +1,22 @@
+.videos{
+    width: 100%;
+    height: 100%;
+}
+
+.videos .videos-container{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 75px;
+}
+.videos .videos-container iframe{
+    width: 560px;
+    height: 340px;
+    margin: 25px auto;
+}
+.videos .videos-container .trailer{
+    width: 560px;
+    height: 340px;
+    margin: auto;
+}

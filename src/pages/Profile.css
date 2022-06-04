@@ -4,4 +4,20 @@
 }
 .profile .profile-container{
     display: flex;
+    width: 75%;
+    margin: auto;
+}
+.profile .profile-container .pic{
+    width: 50%;
+}
+.profile .profile-container .pic img{
+    width: 100%;
+}
+
+.profile .profile-container .text{
+    width: 100%;
+    padding: 0 20px;
+}
+.profile .profile-container .text span{
+    display: block;
 }
