@@ -2,8 +2,45 @@ import React from 'react';
 import styles from './Navbar.css';
 import { Link } from "react-router-dom";
 import Modal from 'react-modal';
+import Sounds from '../components/Sounds.js';
+import Contact from '../components/Contact.js';
 
 Modal.setAppElement('#root');
+
+const customSoundsStyles = {
+    content: {
+    //   top: '50%',
+    //   left: '50%',
+    //   right: 'auto',
+    //   bottom: 'auto',
+    //   marginRight: '-50%',
+    //   transform: 'translate(-50%, -50%)',
+        width: '20%',
+        height: 'fit-content',
+        margin: 'auto'
+    },
+  };
+const customReachStyles = {
+content: {
+//   top: '50%',
+//   left: '50%',
+//   right: 'auto',
+//   bottom: 'auto',
+//   marginRight: '-50%',
+//   transform: 'translate(-50%, -50%)',
+    position: 'absolute',
+    inset: '40px',
+    border: '1px solid rgb(204, 204, 204)',
+    background: 'rgb(255, 255, 255)',
+    overflow: 'auto',
+    borderRadius: '4px',
+    outline: 'none',
+    padding: '20px',
+    width: '20%',
+    height: 'fit-content',
+    margin: 'auto'
+},
+};
 
 function Navbar(){
     const [soundsModalIsOpen, setIsSoundsOpen] = React.useState(false);
@@ -39,17 +76,15 @@ function Navbar(){
                     <Link to="/"><h2>HOME</h2></Link>
                 </li>
                 <li className="item">
-                <h2 className="sounds" onClick={openModal}>SOUNDS</h2>
+                <h2 className="sounds" onClick={() => setIsSoundsOpen(true)}>SOUNDS</h2>
                 <Modal
                     isOpen={soundsModalIsOpen}
                     onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    // style={}
+                    onRequestClose={() => setIsSoundsOpen(false)}
+                    style={customSoundsStyles}
                     contentLabel="Example Modal"
                 >
-                    <h2>Hello</h2>
-                    <button onClick={closeModal}>close</button>
-                    <div>I am a modal</div>
+                    <Sounds/>
                 </Modal>
 
                     
@@ -61,17 +96,16 @@ function Navbar(){
                     <Link to="/shop"><h2>BROWSE</h2></Link>
                 </li>
                 <li className="item">
-                    <h2 onClick={openModal}>REACH</h2>
+                    <h2 onClick={() => setIsReachOpen(true)}>REACH</h2>
                     <Modal
                     isOpen={reachModalIsOpen}
                     onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    // style={}
+                    onRequestClose={() => setIsReachOpen(false)}
+                    style={customReachStyles}
                     contentLabel="Example Modal"
+                    className="reach-modal"
                 >
-                    <h2>Hello2</h2>
-                    <button onClick={closeModal}>close</button>
-                    <div>I am a modal</div>
+                    <Contact/>
                 </Modal>
                 </li>
                 <li className="item">

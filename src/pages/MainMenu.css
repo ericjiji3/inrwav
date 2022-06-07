@@ -13,6 +13,9 @@
     width: 20%;
     margin: auto;
 }
+.main-menu .image-gallery .image-gallery-icon{
+    z-index: 1;
+}
 .main-menu .image-gallery .image-gallery-slides .image-gallery-slide{
     opacity: 0;
 }

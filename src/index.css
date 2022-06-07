@@ -27,7 +27,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* .ReactModalPortal{
+  height: fit-content;
+} */
+.ReactModalPortal .ReactModal__Overlay{
+  z-index: 2;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

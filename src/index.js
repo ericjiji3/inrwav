@@ -7,7 +7,6 @@ import App from './App';
 import MainMenu from "./pages/MainMenu.js";
 import Shop from "./pages/Shop.js";
 import Stages from "./pages/Stages.js";
-import Contact from "./pages/Contact.js";
 import Profile from "./pages/Profile.js";
 import Videos from "./pages/Videos.js";
 // import MainMenu from "./pages/MainMenu.js";
@@ -21,7 +20,6 @@ ReactDOM.render(
       <Route path="/" element={<StartingScreen />} />
       <Route path="shop" element={<Shop />} />
       <Route path="stages" element={<Stages />} />
-      <Route path="contact" element={<Contact />} />
       <Route path="profile" element={<Profile />} />
       <Route path="videos" element={<Videos />} />
     </Routes>

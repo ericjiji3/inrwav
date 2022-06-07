@@ -1,0 +1,22 @@
+.sounds{
+
+}
+.sounds h2{
+    text-align: center;
+}
+.sounds .social-container{
+
+}
+.sounds .social-container .link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+.sounds .social-container .link svg{
+    margin: 15px 10px;
+}
+.sounds .social-container .link h3{
+    display: inherit;
+    align-items: center;
+}

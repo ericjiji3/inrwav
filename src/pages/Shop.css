@@ -1,5 +1,7 @@
 .shop{
-    position: absolute;
     width: 100%;
     height: 100%;
+}
+.shop h2{
+    text-align: center;
 }

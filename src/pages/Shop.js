@@ -8,6 +8,7 @@ function Shop(){
         <div className="shop">
             <h2 className="jordon-header">JORDON</h2>
             <h2>SHOP</h2>
+            <h2>COMING SOON...</h2>
             <Navbar/>
         </div>
     )
