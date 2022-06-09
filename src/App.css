@@ -52,6 +52,55 @@
   transform: scale(1.5);
   animation: logo-zoom-out-in 3s linear;
 }
+.App .starting-screen .logo-description .logo-hide{
+  display: none;
+}
+.App .starting-screen .logo-description .logo-top{
+  position: absolute;
+  clip: rect(0, 192px, 54.04px, 0);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-up 3s ease;
+
+}
+.App .starting-screen .logo-description .logo-bottom{
+  position: absolute;
+  clip: rect(54.04px, 192px, 109px, 0);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-down 3s ease;
+
+}
+/* .App .starting-screen .shatter-logo{
+  background: url('./pics/inrwav-logo.png') 0 286px, url('./pics/inrwav-logo.png') 0 -286px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19%;
+  height: 19%;
+  position: fixed;
+  top: 37%;
+  right: 40%;
+  filter: blur(1.5px);
+  animation: shatter 3s ease;
+} */
+.App .starting-screen .shatter-logo{
+  position: absolute;
+}
+
+.App .starting-screen .shatter-logo.left{
+  background: url('./pics/inrwav-logo.png') top left no-repeat;
+  width: 53%;
+  height: 31%;
+
+}
+.App .starting-screen .shatter-logo.right{
+  background: url('./pics/inrwav-logo.png') top right no-repeat;
+
+}
+
 .App .starting-screen .logo-description .hide{
   display: none;
 }
@@ -97,6 +146,27 @@
   }
 }
 @import "~react-image-gallery/styles/css/image-gallery.css";
+
+@keyframes shatter-left{
+  100%{
+    transform: scale(10) translateX(-300px);
+  }
+}
+@keyframes shatter-right{
+  100%{
+    transform: scale(10) translateX(-300px);
+  }
+}
+@keyframes shatter-up{
+  100%{
+    transform: scale(10) translateY(-300px);
+  }
+}
+@keyframes shatter-down{
+  100%{
+    transform: scale(10) translateY(300px);
+  }
+}
 
 @keyframes reveal-text {
   0%{

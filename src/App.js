@@ -40,10 +40,13 @@ function App(){
         </video>
         </div>
         <div className="logo-description">
-          <img className="logo" src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-top" : "logo"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-bottom" : "logo-hide"} src={logo} alt="oops!"/>
           <h2 className={reveal ? 'show':'hide'}>Press to Continue</h2>
           
         </div>
+        {/* <div className={shatter ? 'shatter-logo right' : 'shatter-hide'}></div>
+        <div className={shatter ? 'shatter-logo left' : 'shatter-hide'}></div> */}
         <div className="noise-filter"></div>
       </div>
       {/* <MainMenu/> */}
