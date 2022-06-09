@@ -1,4 +1,4 @@
-.container{
+/* .container{
   height: 100%;
 }
 .starting-screen{
@@ -25,7 +25,6 @@
 }
 .starting-screen .logo-description .logo{
   width: 10%;
-  /* transform: rotateX(30deg) rotateY(30deg) rotateZ(10deg); */
   transform-style: preserve-3d;
   transform: scale(1.5);
   animation: logo-zoom-out-in 4s linear;
@@ -40,61 +39,4 @@
   animation-delay: 4s;
   margin-top: 30px;
   filter: blur(1.5px);
-}
-
-@keyframes slide {
-    0% {
-      background-position: 50% 0;
-    }
-    100% {
-      background-position: 50% (-300 * 2);
-    }
-}
-
-@keyframes zoom-in {
-    0%{
-      transform: scale(3);
-      opacity: 0;
-    }
-    100%{
-      transform: scale(1);
-      opacity: 1;
-    }
-}
-
-@keyframes logo-animation-horizontal{
-  /* 0%{
-    transform: translateX(-500);
-  } */
-  /* 50%{
-    transform: translateY(15px);
-  } */
-  100%{
-    right: 0;
-    /* transform: translateY(0); */
-  }
-}
-@keyframes logo-animation-vertical{
-  0%,100%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(15px);
-  }
-}
-@keyframes logo-zoom-out-in{
-  0%{
-    /* translateX(50px) rotateX(30deg) */
-    transform: scale(.5);
-  }
-  50%{
-    transform: scale(4.5);
-  }
-  75%{
-    transform: scale(3.5);
-  }
-  100%{
-    /* translateX(50px) rotateX(390deg) */
-    transform: scale(1.5);
-  }
-}
+} */
