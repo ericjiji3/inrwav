@@ -13,6 +13,7 @@ import React, {Component,useState, useEffect, useRef} from 'react';
 function App(){
   const [reveal, setReveal] = useState(false);
   const [shatter, setShatter] = useState(false);
+  const [menu, setMenu] = useState(false);
   const revealRef = useRef(reveal);
   revealRef.current = reveal;
 
@@ -20,6 +21,9 @@ function App(){
     function clickedFunction(){
       setShatter(true);
       setReveal(false);
+      setTimeout(() => {
+        setMenu(true);
+      }, 3000)
     }
     setTimeout(() => {
       setReveal(true); // count is 0 here
@@ -31,8 +35,10 @@ function App(){
 
     
   return (
+
+    
     <div className="App">
-      <div className="starting-screen ">
+      <div className={menu ? "starting-screen hidden" : "starting-screen"}>
         
         <div className="video-container">
         <video autoPlay loop muted>
@@ -40,16 +46,44 @@ function App(){
         </video>
         </div>
         <div className="logo-description">
-          <img className={shatter ? "logo-top" : "logo"} src={logo} alt="oops!"/>
-          <img className={shatter ? "logo-bottom" : "logo-hide"} src={logo} alt="oops!"/>
+          <div>
+          <img className={shatter ? "logo-11" : "logo"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-21" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-31" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-41" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-51" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-12" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-22" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-32" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-42" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-52" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-13" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-23" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-33" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-43" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-53" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-14" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-24" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-34" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-44" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-54" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-15" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-25" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-35" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-45" : "logo-hide"} src={logo} alt="oops!"/>
+          <img className={shatter ? "logo-55" : "logo-hide"} src={logo} alt="oops!"/>
+          </div>
           <h2 className={reveal ? 'show':'hide'}>Press to Continue</h2>
           
         </div>
         {/* <div className={shatter ? 'shatter-logo right' : 'shatter-hide'}></div>
         <div className={shatter ? 'shatter-logo left' : 'shatter-hide'}></div> */}
+        <div className={shatter ? "noise-filter backdrop" : "noise-filter"}></div>
+      </div>
+      <div className={menu ? "menu" : "menu hide"}>
+        <MainMenu/>
         <div className="noise-filter"></div>
       </div>
-      {/* <MainMenu/> */}
     </div>
   );
 }

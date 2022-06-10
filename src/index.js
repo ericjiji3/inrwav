@@ -18,6 +18,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/home" element={<MainMenu />} />
       <Route path="shop" element={<Shop />} />
       <Route path="stages" element={<Stages />} />
       <Route path="profile" element={<Profile />} />

@@ -3,11 +3,32 @@
   height: 100%;
   /* filter: blur(3px); */
   font-family: 'bold';
+  overflow: hidden;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+
+.App .menu{
+  display: block;
+}
+.App .menu .noise-filter{
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  background-image: url(data:image/png;base64,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);
+  background-color: white;
+  z-index: 5;
+  animation: menu-intro 2s ease forwards;
+  
+}
+.App .menu.hide{
+  display: none;
 }
 
 .App .starting-screen{
@@ -17,6 +38,10 @@
   background-image: url('./pics/stars.gif');
   background-size: cover;
   height: 100vh; */
+  overflow: hidden;
+}
+.App .starting-screen.hidden{
+  display: none;
 }
 .App .starting-screen .noise-filter{
   position:absolute;
@@ -25,7 +50,12 @@
   bottom:0px;
   left:0px;
   background-image: url(data:image/png;base64,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);
-
+  background-color: unset;
+}
+.App .starting-screen .noise-filter.backdrop{
+  /* background-color: #44b3d6; */
+  background-color: white;
+  transition: background-color 3s ease;
 }
 .App .starting-screen video{
   position: fixed;
@@ -44,8 +74,8 @@
   color: white;
   animation: logo-animation-horizontal 3s forwards;
   filter: blur(1.5px);
-    
 }
+
 .App .starting-screen .logo-description .logo{
   width: 10%;
   transform-style: preserve-3d;
@@ -55,24 +85,250 @@
 .App .starting-screen .logo-description .logo-hide{
   display: none;
 }
-.App .starting-screen .logo-description .logo-top{
+.App .starting-screen .logo-description .logo-11{
   position: absolute;
-  clip: rect(0, 192px, 54.04px, 0);
+  clip: rect(0, 38.4px, 21.8px, 0);
   width: 10%;
   transform: scale(1.5) translateY(0px);
   left: 45%;
-  animation: shatter-up 3s ease;
-
+  animation: shatter-11 3s ease forwards;
+  overflow: hidden;
 }
-.App .starting-screen .logo-description .logo-bottom{
+.App .starting-screen .logo-description .logo-21{
   position: absolute;
-  clip: rect(54.04px, 192px, 109px, 0);
+  clip: rect(0px, 76.8px, 21.8px, 38.4px);
   width: 10%;
   transform: scale(1.5) translateY(0px);
   left: 45%;
-  animation: shatter-down 3s ease;
-
+  animation: shatter-21 3s ease forwards;
+  overflow: hidden;
 }
+.App .starting-screen .logo-description .logo-31{
+  position: absolute;
+  clip: rect(0px, 115.2px, 21.8px, 76.8px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-31 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-41{
+  position: absolute;
+  clip: rect(0px, 153.6px, 21.8px, 115.2px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-41 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-51{
+  position: absolute;
+  clip: rect(0px, 192px, 21.8px, 153.6px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-51 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-12{
+  position: absolute;
+  clip: rect(21.8px, 38.4px, 43.6px, 0);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-12 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-22{
+  position: absolute;
+  clip: rect(21.8px, 76.8px, 43.6px, 38.4px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-22 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-32{
+  position: absolute;
+  clip: rect(21.8px, 115.2px, 43.6px, 76.8px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-32 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-42{
+  position: absolute;
+  clip: rect(21.8px, 153.6px, 43.6px, 115.2px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-42 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-52{
+  position: absolute;
+  clip: rect(21.8px, 192px, 43.6px, 153.6px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-52 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-13{
+  position: absolute;
+  clip: rect(43.6px, 38.4px, 65.4px, 0);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-13 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-23{
+  position: absolute;
+  clip: rect(43.6px, 76.8px, 65.4px, 38.4px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-23 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-33{
+  position: absolute;
+  clip: rect(43.6px, 115.2px, 65.4px, 76.8px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-33 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-43{
+  position: absolute;
+  clip: rect(43.6px, 153.6px, 65.4px, 115.2px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-43 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-53{
+  position: absolute;
+  clip: rect(43.6px, 192px, 65.4px, 153.6px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-53 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-14{
+  position: absolute;
+  clip: rect(65.4px, 38.4px, 87.2px, 0);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-14 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-24{
+  position: absolute;
+  clip: rect(65.4px, 76.8px, 87.2px, 38.4px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-24 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-34{
+  position: absolute;
+  clip: rect(65.4px, 115.2px, 87.2px, 76.8px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-34 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-44{
+  position: absolute;
+  clip: rect(65.4px, 153.6px, 87.2px, 115.2px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-44 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-54{
+  position: absolute;
+  clip: rect(65.4px, 192px, 87.2px, 153.6px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-54 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-15{
+  position: absolute;
+  clip: rect(87.2px, 38.4px, 109px, 0);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-15 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-25{
+  position: absolute;
+  clip: rect(87.2px, 76.8px, 109px, 38.4px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-25 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-35{
+  position: absolute;
+  clip: rect(87.2px, 115.2px, 109px, 76.8px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-35 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-45{
+  position: absolute;
+  clip: rect(87.2px, 153.6px, 109px, 115.2px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-45 3s ease forwards;
+overflow: hidden;
+}
+.App .starting-screen .logo-description .logo-55{
+  position: absolute;
+  clip: rect(87.2px, 192px, 109px, 153.6px);
+  width: 10%;
+  transform: scale(1.5) translateY(0px);
+  left: 45%;
+  animation: shatter-55 3s ease forwards;
+overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .App .starting-screen .shatter-logo{
   background: url('./pics/inrwav-logo.png') 0 286px, url('./pics/inrwav-logo.png') 0 -286px;
   background-size: contain;
@@ -137,19 +393,18 @@
   text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@keyframes menu-intro {
+  100% {
+    background-color: transparent;
+    z-index: -1;
+    opacity: 0;
   }
 }
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 @keyframes shatter-left{
   100%{
-    transform: scale(10) translateX(-300px);
+    transform: scale(10) translate(-150px)
   }
 }
 @keyframes shatter-right{
@@ -167,6 +422,188 @@
     transform: scale(10) translateY(300px);
   }
 }
+@keyframes shatter-11{
+  100%{
+    transform: scale(5) translate(-40%, -20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-21{
+  100%{
+    transform: scale(5) translate(-20%, -40%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-31{
+  100%{
+    transform: scale(5) translate(0%, -60%);
+  overflow: hidden;  
+  opacity: 0;
+}
+}
+@keyframes shatter-41{
+  100%{
+    transform: scale(5) translate(20%, -40%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-51{
+  100%{
+    transform: scale(5) translate(40%, -20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes shatter-12{
+  100%{
+    transform: scale(5.5) translate(-40%, -10%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-22{
+  100%{
+    transform: scale(5.5) translate(-20%, -20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-32{
+  100%{
+    transform: scale(5.5) translate(0%, -30%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-42{
+  100%{
+    transform: scale(5.5) translate(20%, -20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-52{
+  100%{
+    transform: scale(5.5) translate(40%, -10%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes shatter-13{
+  100%{
+    transform: scale(5.5) translate(-40%, -10%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-23{
+  100%{
+    transform: scale(6.5) translate(-20%, -5%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-33{
+  100%{
+    transform: scale(9) translate(0%, 0%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-43{
+  100%{
+    transform: scale(6.5) translate(20%, -5%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-53{
+  100%{
+    transform: scale(5.5) translate(40%, -10%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes shatter-14{
+  100%{
+    transform: scale(5.5) translate(-40%, 10%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-24{
+  100%{
+    transform: scale(5.5) translate(-20%, 20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-34{
+  100%{
+    transform: scale(5.5) translate(0%, 30%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-44{
+  100%{
+    transform: scale(5.5) translate(20%, 20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-54{
+  100%{
+    transform: scale(5.5) translate(40%, 10%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes shatter-15{
+  100%{
+    transform: scale(4) translate(-30%, 20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-25{
+  100%{
+    transform: scale(4) translate(-15%, 40%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-35{
+  100%{
+    transform: scale(4) translate(0%, 60%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-45{
+  100%{
+    transform: scale(4) translate(15%, 40%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-55{
+  100%{
+    transform: scale(4) translate(30%, 20%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+
+
 
 @keyframes reveal-text {
   0%{

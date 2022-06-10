@@ -78,6 +78,7 @@ function MainMenu(){
                     </figure>
                 </div>
             </div>
+            <div className="stars"></div>
         </div>
     )
 }
