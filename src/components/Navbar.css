@@ -2,14 +2,18 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .navbar-container .navbar{
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: red;
     margin: 0;
+    background-image: url('../pics/navBar/NAVBAR.png');
+    background-size: 85% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .navbar-container .navbar .item{
     margin: 0 15px;
@@ -17,4 +21,7 @@
 .navbar-container .navbar .item a{
     text-decoration: none;
     color: black;
+}
+.navbar-container .navbar .item a img{
+    width: 25%;
 }

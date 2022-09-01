@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Modal from 'react-modal';
 import Sounds from '../components/Sounds.js';
 import Contact from '../components/Contact.js';
+import VISUALS from '../pics/navBar/VISUALS.png';
 
 Modal.setAppElement('#root');
 
@@ -90,7 +91,7 @@ function Navbar(){
                     
                 </li>
                 <li className="item">
-                    <Link to="/videos"><h2>VISUALS</h2></Link>
+                    <Link to="/videos"><img className='visuals' src={VISUALS}/></Link>
                 </li>
                 <li className="item">
                     <Link to="/shop"><h2>BROWSE</h2></Link>
