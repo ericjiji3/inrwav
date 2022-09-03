@@ -5,6 +5,12 @@ import Modal from 'react-modal';
 import Sounds from '../components/Sounds.js';
 import Contact from '../components/Contact.js';
 import VISUALS from '../pics/navBar/VISUALS.png';
+import HOME from '../pics/navBar/HOME.png';
+import SHOP from '../pics/navBar/BROWSE.png';
+import SOUND from '../pics/navBar/SOUNDS.png';
+import REACH from '../pics/navBar/REACH.png';
+import STAGE from '../pics/navBar/STAGES.png';
+import PROFILE from '../pics/navBar/PROFILE.png';
 
 Modal.setAppElement('#root');
 
@@ -74,10 +80,11 @@ function Navbar(){
         <div className="navbar-container">
             <ul className="navbar">
                 <li className="item">
-                    <Link to="/home"><h2>HOME</h2></Link>
+                    <Link to="/home"><img src={HOME}/></Link>
                 </li>
                 <li className="item">
-                <h2 className="sounds" onClick={() => setIsSoundsOpen(true)}>SOUNDS</h2>
+                <img src={SOUND} onClick={() => setIsSoundsOpen(true)}/>
+                {/* <h2 className="sounds" onClick={() => setIsSoundsOpen(true)}>SOUNDS</h2> */}
                 <Modal
                     isOpen={soundsModalIsOpen}
                     onAfterOpen={afterOpenModal}
@@ -94,10 +101,11 @@ function Navbar(){
                     <Link to="/videos"><img className='visuals' src={VISUALS}/></Link>
                 </li>
                 <li className="item">
-                    <Link to="/shop"><h2>BROWSE</h2></Link>
+                    <Link to="/shop"><img src={SHOP}/></Link>
                 </li>
                 <li className="item">
-                    <h2 onClick={() => setIsReachOpen(true)}>REACH</h2>
+                    <img src={REACH} onClick={() => setIsReachOpen(true)}/>
+                    {/* <h2 onClick={() => setIsReachOpen(true)}>REACH</h2> */}
                     <Modal
                     isOpen={reachModalIsOpen}
                     onAfterOpen={afterOpenModal}
@@ -110,10 +118,10 @@ function Navbar(){
                 </Modal>
                 </li>
                 <li className="item">
-                    <Link to="/stages"><h2>STAGES</h2></Link>
+                    <Link to="/stages"><img src={STAGE}/></Link>
                 </li>
                 <li className="item">
-                    <Link to="/profile"><h2>PROFILE</h2></Link>
+                    <Link to="/profile"><img src={PROFILE}/></Link>
                 </li>
             </ul>
             

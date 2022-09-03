@@ -12,6 +12,7 @@ import Pic5 from '../pics/photo-gallery/pic5.jpeg';
 import Pic6 from '../pics/photo-gallery/pic6.png';
 import Pic7 from '../pics/photo-gallery/pic7.jpeg';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
+import startingScreen from "../pics/startingScreen.mp4";
 
 function MainMenu(){
     const images = [
@@ -47,6 +48,9 @@ function MainMenu(){
 
     return(
         <div className="main-menu">
+            <video autoPlay loop muted>
+                <source src={startingScreen} type="video/mp4"/>
+            </video>
             <Navbar/>
             <h2 className="jordon-header">JORDON</h2>
             <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false}/>
@@ -78,7 +82,7 @@ function MainMenu(){
                     </figure>
                 </div>
             </div>
-            <div className="stars"></div>
+            
         </div>
     )
 }

@@ -3,11 +3,15 @@ import React from 'react';
 import Navbar from "../components/Navbar.js";
 import trailer from "../pics/trailer.MOV";
 import styles from "./Videos.css";
+import startingScreen from "../pics/startingScreen.mp4";
 
 function Videos(){
 
     return(
         <div className="videos">
+            <video autoPlay loop muted>
+                <source src={startingScreen} type="video/mp4"/>
+            </video>
             <h2 className="jordon-header">JORDON</h2>
             <div className="videos-container">
                 <iframe className = "asiam" src="https://www.youtube.com/embed/vgjgmDccKyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>

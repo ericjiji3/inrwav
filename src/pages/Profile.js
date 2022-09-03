@@ -3,11 +3,15 @@ import React from 'react';
 import Navbar from "../components/Navbar.js";
 import styles from "./Profile.css";
 import Pic1 from '../pics/photo-gallery/pic1.jpeg';
+import startingScreen from "../pics/startingScreen.mp4";
 
 function Profile(){
 
     return(
         <div className="profile">
+            <video autoPlay loop muted>
+                <source src={startingScreen} type="video/mp4"/>
+            </video>
             <h2 className="jordon-header">JORDON</h2>
             <Navbar/>
             <div className="profile-container">

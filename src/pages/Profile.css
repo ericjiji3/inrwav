@@ -2,6 +2,12 @@
     width: 100%;
     height: 100%;
 }
+.profile video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 .profile .profile-container{
     display: flex;
     width: 75%;
@@ -17,6 +23,7 @@
 .profile .profile-container .text{
     width: 100%;
     padding: 0 20px;
+    color: white;
 }
 .profile .profile-container .text span{
     display: block;

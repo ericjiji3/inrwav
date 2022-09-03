@@ -11,17 +11,22 @@
     justify-content: center;
     margin: 0;
     background-image: url('../pics/navBar/NAVBAR.png');
-    background-size: 85% 100%;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .navbar-container .navbar .item{
-    margin: 0 15px;
+    margin: 20px 15px;
+    display: flex;
+    align-items: center;
+}
+.navbar-container .navbar .item img{
+    width: 80px;
 }
 .navbar-container .navbar .item a{
     text-decoration: none;
     color: black;
 }
 .navbar-container .navbar .item a img{
-    width: 25%;
+    width: 80px;
 }

@@ -2,6 +2,12 @@
     width: 100%;
     height: 100%;
 }
+.stages video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 .stages .banner{
     width: 75%;
     margin: auto;
