@@ -82,8 +82,8 @@ function App(){
       </div>
       <div className={menu ? "menu" : "menu hide"}>
         <MainMenu/>
-        <div className="noise-filter"></div>
       </div>
+      <div className="mm-noise-filter"></div>
     </div>
   );
 }

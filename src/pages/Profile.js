@@ -1,15 +1,18 @@
 import { render } from '@testing-library/react';
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import styles from "./Profile.css";
 import Pic1 from '../pics/photo-gallery/pic1.jpeg';
 import startingScreen from "../pics/startingScreen.mp4";
 
 function Profile(){
-
+    const videoRef = useRef();
+    const setPlayBack = () => {
+    videoRef.current.playbackRate = 0.6;
+    };
     return(
         <div className="profile">
-            <video autoPlay loop muted>
+            <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={startingScreen} type="video/mp4"/>
             </video>
             <h2 className="jordon-header">JORDON</h2>
@@ -25,6 +28,7 @@ function Profile(){
                 <button>LISTEN NOW</button>
                 </div>
             </div>
+            <div className="noise-filter"></div>
         </div>
     )
 }

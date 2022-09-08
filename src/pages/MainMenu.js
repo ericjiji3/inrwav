@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./MainMenu.css";
 import Navbar from "../components/Navbar.js";
@@ -45,10 +45,14 @@ function MainMenu(){
         //     thumbnail: Pic7,
         // },
       ];
+      const videoRef = useRef();
+      const setPlayBack = () => {
+        videoRef.current.playbackRate = 0.6;
+      };
 
     return(
         <div className="main-menu">
-            <video autoPlay loop muted>
+            <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={startingScreen} type="video/mp4"/>
             </video>
             <Navbar/>
@@ -82,6 +86,7 @@ function MainMenu(){
                     </figure>
                 </div>
             </div>
+            <div className="noise-filter"></div>
             
         </div>
     )
