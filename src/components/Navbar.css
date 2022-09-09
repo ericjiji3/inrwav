@@ -20,13 +20,31 @@
     display: flex;
     align-items: center;
 }
-.navbar-container .navbar .item img{
-    width: 80px;
+.navbar-container .navbar .item h2{
+    color: white;
+    font-size: 20px;
+}
+.navbar-container .navbar .item h2:hover{
+    cursor: pointer;
 }
 .navbar-container .navbar .item a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-.navbar-container .navbar .item a img{
-    width: 80px;
+.navbar-container .navbar .item a h2{
+    color: white;
+    font-size: 20px;
+}
+.ReactModalPortal .sound-modal{
+    width: 35%!important;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    inset: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 60px 20px;
 }

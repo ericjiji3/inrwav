@@ -18,6 +18,8 @@
 }
 .stages h2{
     text-align: center;
+    z-index: 1;
+    color: white;
 }
 .stages .noise-filter{
     position:fixed;

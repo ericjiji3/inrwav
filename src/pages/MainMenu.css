@@ -41,7 +41,7 @@
 
 .main-menu .album{
     display: block;
-    width: 15rem;
+    width: 35%;
     height: 15rem;
     margin: 50px auto;
     position: relative;
@@ -49,11 +49,12 @@
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
-    font-family: "SpaceMono";
+    font-family: "bold";
     text-decoration: none;
     color: #000;
     z-index: 1;
-    
+    border-top: 1px solid white;
+    padding-top: 50px;
 }
 .main-menu .album .album-text{
     font-size: 20px;
@@ -85,21 +86,28 @@
 }
 
 .main-menu .press{
-    background: #f0efef;
+    /* background: #f0efef; */
     opacity: 1;
-    color: #3d3d3d;
+    color: white;
     padding-bottom: 75px;
     z-index: 1;
     position: relative;
+    border-top: 1px solid white;
+    width: 35%;
+    margin: auto;
+}
+.main-menu .press .press-text{
+    text-align: center;
+    font-size: 12.5px;
 }
 .main-menu .press .press-figures{
-    display: flex;
+    display: block;
 }
 .main-menu .press .press-figures figure{
     text-align: center;
 }
 .main-menu .press .press-figures figure img{
-    width: 25%;
+    width: 30%;
 }
 .main-menu .noise-filter{
     position:fixed;

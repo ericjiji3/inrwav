@@ -3,15 +3,18 @@
 }
 .sounds h2{
     text-align: center;
+    margin: 10px;
 }
 .sounds .social-container{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .sounds .social-container .link{
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: #000;
+    flex: 33%;
 }
 .sounds .social-container .link svg{
     margin: 15px 10px;
@@ -19,4 +22,5 @@
 .sounds .social-container .link h3{
     display: inherit;
     align-items: center;
+    font-size: 15px;
 }

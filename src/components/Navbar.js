@@ -80,17 +80,18 @@ function Navbar(){
         <div className="navbar-container">
             <ul className="navbar">
                 <li className="item">
-                    <Link to="/home"><img src={HOME}/></Link>
+                    <Link to="/home"><h2>HOME</h2></Link>
                 </li>
                 <li className="item">
-                <img src={SOUND} onClick={() => setIsSoundsOpen(true)}/>
-                {/* <h2 className="sounds" onClick={() => setIsSoundsOpen(true)}>SOUNDS</h2> */}
+                
+                <h2 className="sounds" onClick={() => setIsSoundsOpen(true)}>SOUNDS</h2>
                 <Modal
                     isOpen={soundsModalIsOpen}
                     onAfterOpen={afterOpenModal}
                     onRequestClose={() => setIsSoundsOpen(false)}
                     style={customSoundsStyles}
                     contentLabel="Example Modal"
+                    className="sound-modal"
                 >
                     <Sounds/>
                 </Modal>
@@ -98,14 +99,13 @@ function Navbar(){
                     
                 </li>
                 <li className="item">
-                    <Link to="/videos"><img className='visuals' src={VISUALS}/></Link>
+                    <Link to="/videos"><h2>VISUALS</h2></Link>
                 </li>
                 <li className="item">
-                    <Link to="/shop"><img src={SHOP}/></Link>
+                    <Link to="/shop"><h2>BROWSE</h2></Link>
                 </li>
                 <li className="item">
-                    <img src={REACH} onClick={() => setIsReachOpen(true)}/>
-                    {/* <h2 onClick={() => setIsReachOpen(true)}>REACH</h2> */}
+                    <h2 onClick={() => setIsReachOpen(true)}>REACH</h2>
                     <Modal
                     isOpen={reachModalIsOpen}
                     onAfterOpen={afterOpenModal}
@@ -118,10 +118,10 @@ function Navbar(){
                 </Modal>
                 </li>
                 <li className="item">
-                    <Link to="/stages"><img src={STAGE}/></Link>
+                    <Link to="/stages"><h2>STAGES</h2></Link>
                 </li>
                 <li className="item">
-                    <Link to="/profile"><img src={PROFILE}/></Link>
+                    <Link to="/profile"><h2>PROFILE</h2></Link>
                 </li>
             </ul>
             

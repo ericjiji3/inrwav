@@ -9,14 +9,15 @@
     z-index: -1;
 }
 .profile .profile-container{
-    display: flex;
+    display: block;
     width: 75%;
     margin: auto;
     z-index: 1;
     position: relative;
 }
 .profile .profile-container .pic{
-    width: 50%;
+    width: 20%;
+    margin: auto;
 }
 .profile .profile-container .pic img{
     width: 100%;
@@ -24,8 +25,9 @@
 
 .profile .profile-container .text{
     width: 100%;
-    padding: 0 20px;
+    padding: 15px 20px;
     color: white;
+    text-align: center;
 }
 .profile .profile-container .text span{
     display: block;
