@@ -49,7 +49,21 @@ function MainMenu(){
       const setPlayBack = () => {
         videoRef.current.playbackRate = 0.6;
       };
-
+      const handleCustomRightNavClick = (fn) => {
+        console.log("next");
+        fn();
+        };
+        const myRenderRightNav = (fn, disabled) => {
+            return (
+                <button
+                type='button'
+                className='image-gallery-right-nav'
+                disabled={disabled}
+                onClick={() => handleCustomRightNavClick(fn)}
+                aria-label='Next Slide'
+                />
+                );
+        };
     return(
         <div className="main-menu">
             <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>

@@ -29,14 +29,23 @@
     z-index: 1;
 }
 .main-menu .image-gallery .image-gallery-icon{
-    z-index: 1;
+    z-index: 2;
 }
-.main-menu .image-gallery .image-gallery-slides .image-gallery-slide{
-    opacity: 0;
+.main-menu .image-gallery .image-gallery-slides .image-gallery-slide.right{
+    opacity: 1;
+    transition: .5s transform ease-in-out!important;
+    transition-delay: 1s!important;
+}
+.main-menu .image-gallery .image-gallery-slides .image-gallery-slide.left{
+    opacity: 1;
+    transition: .5s transform ease-in-out!important;
+    transition-delay: 1s!important;
 }
 .main-menu .image-gallery .image-gallery-slides .image-gallery-slide.center{
-    opacity: 1;
-    transition: opacity 450ms ease-out;
+    left: 0;
+    right: 0;
+    transition: 1s all ease-out!important;
+    z-index: 1;
 }
 
 .main-menu .album{
