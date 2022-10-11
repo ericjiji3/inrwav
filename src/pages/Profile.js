@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import React, {useEffect, useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import styles from "./Profile.css";
-import Pic1 from '../pics/photo-gallery/pic1.jpeg';
+import Pic1 from '../pics/photo-gallery/pic1.png';
 import startingScreen from "../pics/startingScreen.mp4";
 
 function Profile(){
