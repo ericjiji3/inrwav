@@ -36,34 +36,11 @@ function MainMenu(){
             original: Pic5,
             thumbnail: Pic5,
         },
-        // {
-        //     original: Pic6,
-        //     thumbnail: Pic6,
-        // },
-        // {
-        //     original: Pic7,
-        //     thumbnail: Pic7,
-        // },
       ];
       const videoRef = useRef();
       const setPlayBack = () => {
         videoRef.current.playbackRate = 0.6;
       };
-      const handleCustomRightNavClick = (fn) => {
-        console.log("next");
-        fn();
-        };
-        const myRenderRightNav = (fn, disabled) => {
-            return (
-                <button
-                type='button'
-                className='image-gallery-right-nav'
-                disabled={disabled}
-                onClick={() => handleCustomRightNavClick(fn)}
-                aria-label='Next Slide'
-                />
-                );
-        };
     return(
         <div className="main-menu">
             <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
@@ -76,7 +53,7 @@ function MainMenu(){
                 <div className="album-text">LATEST SOUNDS</div>
                 <img className="album-pic" src={Pic6}/>
             </div>
-            <iframe className = "featured-video" src="https://www.youtube.com/embed/vgjgmDccKyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe className = "featured-video" src="https://www.youtube.com/embed/vgjgmDccKyk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
             <div className="press">
                 <div className='press-text'>
                     <h1>PRESS</h1>

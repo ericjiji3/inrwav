@@ -4,9 +4,6 @@ import Navbar from './components/Navbar.js';
 import './App.css';
 import { Link } from "react-router-dom";
 import startingScreen from "./pics/startingScreen.mp4";
-import stars from "./pics/stars.gif";
-import clickToContinue from "./pics/clickToContinue.mp4";
-import hello from "./pics/hello.mp4";
 import React, {Component,useState, useEffect, useRef} from 'react';
 
 
