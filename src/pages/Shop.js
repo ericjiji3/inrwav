@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import React, {useEffect, useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import styles from "./Shop.css";
-import startingScreen from "../pics/startingScreen.mp4";
+import rayTrace from "../pics/raytrace.mp4";
 
 function Shop(){
     const videoRef = useRef();
@@ -12,7 +12,7 @@ function Shop(){
     return(
         <div className="shop">
             <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
-                <source src={startingScreen} type="video/mp4"/>
+                <source src={rayTrace} type="video/mp4"/>
             </video>
             <h2 className="jordon-header">JORDON</h2>
             <h2>SHOP</h2>

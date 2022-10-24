@@ -3,7 +3,7 @@ import React, {useEffect, useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import trailer from "../pics/trailer.MOV";
 import styles from "./Videos.css";
-import startingScreen from "../pics/startingScreen.mp4";
+import rayTrace from "../pics/raytrace.mp4";
 
 function Videos(){
     const videoRef = useRef();
@@ -13,7 +13,7 @@ function Videos(){
     return(
         <div className="videos">
             <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
-                <source src={startingScreen} type="video/mp4"/>
+                <source src={rayTrace} type="video/mp4"/>
             </video>
             <h2 className="jordon-header">JORDON</h2>
             <div className="videos-container">
