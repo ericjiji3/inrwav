@@ -3,7 +3,7 @@ import React, {useEffect, useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import styles from "./Profile.css";
 import rayTrace from "../pics/raytrace.mp4";
-import Pic1 from '../pics/photo-gallery/pic1.png';
+import Pic1 from '../pics/photo-gallery/pic1.jpg';
 
 function Profile(){
     const videoRef = useRef();

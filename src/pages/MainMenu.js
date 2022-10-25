@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 import styles from "./MainMenu.css";
 import Navbar from "../components/Navbar.js";
 import ImageGallery from 'react-image-gallery';
-import Pic1 from '../pics/photo-gallery/pic1.png';
-import Pic2 from '../pics/photo-gallery/pic2.png';
-import Pic3 from '../pics/photo-gallery/pic3.png';
-import Pic4 from '../pics/photo-gallery/pic4.png';
-import Pic5 from '../pics/photo-gallery/pic5.png';
+import Pic1 from '../pics/photo-gallery/pic1.jpg';
+import Pic2 from '../pics/photo-gallery/pic2.jpg';
+import Pic3 from '../pics/photo-gallery/pic3.jpg';
+import Pic4 from '../pics/photo-gallery/pic4.jpg';
+import Pic5 from '../pics/photo-gallery/pic5.jpg';
 import Pic6 from '../pics/photo-gallery/pic6.png';
 import Pic7 from '../pics/photo-gallery/pic7.jpeg';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
 import rayTrace from "../pics/raytrace.mp4";
+import rayTraceCompress from "../pics/raytraceCompress.mp4";
 
 function MainMenu(){
     const images = [
@@ -44,7 +45,7 @@ function MainMenu(){
     return(
         <div className="main-menu">
             <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
-                <source src={rayTrace} type="video/mp4"/>
+                <source src={rayTraceCompress} type="video/mp4"/>
             </video>
             <Navbar/>
             <h2 className="jordon-header">JORDON</h2>

@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 import Modal from 'react-modal';
 import Sounds from '../components/Sounds.js';
 import Contact from '../components/Contact.js';
-import VISUALS from '../pics/navBar/VISUALS.png';
-import HOME from '../pics/navBar/HOME.png';
-import SHOP from '../pics/navBar/BROWSE.png';
-import SOUND from '../pics/navBar/SOUNDS.png';
-import REACH from '../pics/navBar/REACH.png';
-import STAGE from '../pics/navBar/STAGES.png';
-import PROFILE from '../pics/navBar/PROFILE.png';
+
 
 Modal.setAppElement('#root');
 

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.js';
 import './App.css';
 import { Link } from "react-router-dom";
 import startingScreen from "./pics/startingScreen.mp4";
+import startingScreenCompress from "./pics/startCompress.mp4";
 import React, {Component,useState, useEffect, useRef} from 'react';
 
 
@@ -39,7 +40,7 @@ function App(){
         
         <div className="video-container">
         <video autoPlay loop muted>
-          <source src={startingScreen} type="video/mp4"/>
+          <source src={startingScreenCompress} type="video/mp4"/>
         </video>
         </div>
         <div className="logo-description">
@@ -73,8 +74,6 @@ function App(){
           <h2 className={reveal ? 'show':'hide'}>Press to Continue</h2>
           
         </div>
-        {/* <div className={shatter ? 'shatter-logo right' : 'shatter-hide'}></div>
-        <div className={shatter ? 'shatter-logo left' : 'shatter-hide'}></div> */}
         <div className={shatter ? "noise-filter backdrop" : "noise-filter"}></div>
       </div>
       <div className={menu ? "menu" : "menu hide"}>
