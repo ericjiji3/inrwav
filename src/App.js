@@ -5,6 +5,7 @@ import './App.css';
 import { Link } from "react-router-dom";
 import startingScreen from "./pics/startingScreen.mp4";
 import startingScreenCompress from "./pics/startCompress.mp4";
+import starsCompress from "./pics/StarsComp.mp4";
 import React, {Component,useState, useEffect, useRef} from 'react';
 
 
@@ -40,7 +41,7 @@ function App(){
         
         <div className="video-container">
         <video autoPlay loop muted>
-          <source src={startingScreenCompress} type="video/mp4"/>
+          <source src={starsCompress} type="video/mp4"/>
         </video>
         </div>
         <div className="logo-description">

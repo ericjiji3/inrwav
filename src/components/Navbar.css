@@ -35,6 +35,9 @@
     color: white;
     font-size: 20px;
 }
+.ReactModalPortal .ReactModal__Overlay.ReactModal__Overlay--after-open{
+    background-color: rgb(56 56 56 / 75%)!important;
+}
 .ReactModalPortal .sound-modal{
     width: 35%!important;
     height: fit-content;
@@ -42,9 +45,35 @@
     position: absolute;
     inset: 40px;
     border: 1px solid rgb(204, 204, 204);
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
+    background-image: linear-gradient(#6E4525, #A47869);
     overflow: auto;
     border-radius: 4px;
     outline: none;
     padding: 60px 20px;
+    animation: popModal 1s forwards ease;
+}
+.ReactModalPortal .reach-modal{
+    width: 35%!important;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    inset: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background-image: linear-gradient(#6E4525, #A47869)!important;
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 60px 20px;
+    animation: popModal 1s forwards ease;
+}
+@keyframes popModal{
+    0%{
+        transform: scale(0);
+        top: 100%;
+    }
+    100%{
+        transform: scale(1);
+        top: 0;
+    }
 }

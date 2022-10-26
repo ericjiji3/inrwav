@@ -60,20 +60,27 @@ function MainMenu(){
                     <h1>PRESS</h1>
                 </div>
                 <div className='press-figures'>
+                    
                     <figure>
-                        <img src={Pic7}/>
-                        <h5>PROFILE</h5>
-                        <p>Learn more about the artist behind his music and his work on and off the stage</p>
                         <Link to="/profile" className="about">
-                            <button className = "button">Read More</button>
+                        <img src={Pic7}/>
+                        <div className='overlay'>
+                            <h5>PROFILE</h5>
+                            <p>Learn more about the artist behind his music and his work on and off the stage</p>
+                            {/* <Link to="/profile" className="about">
+                                <button className = "button">Read More</button>
+                            </Link> */}
+                        </div>
                         </Link>
                     </figure>
+                    
                     <figure>
-                        <img src={Podcast}/>
-                        <h5>BEVO BEATS: HIP HOP ON THE 40 ACRES</h5>
-                        <p>Listen to Jordon on this episode of Bevo Beats, focusing on the the disconnect between local hip hop scenes and the UT campus.</p>
                         <a href={'https://open.spotify.com/episode/5NOcX0vwjtsIWonBYa3d3a'} className = "about" style = {{textDecoration: "none"}}>
-                            <button className = "button">Listen More</button>
+                        <img src={Podcast}/>
+                        <div className='overlay'>
+                            <h5>BEVO BEATS: HIP HOP ON THE 40 ACRES</h5>
+                            <p>Listen to Jordon on this episode of Bevo Beats, focusing on the the disconnect between local hip hop scenes and the UT campus.</p>
+                        </div>
                         </a>
                     </figure>
                 </div>
