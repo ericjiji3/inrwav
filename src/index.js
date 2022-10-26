@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-// import ReactDOM from "react-dom/client";
 import './index.css';
 import StartingScreen from './pages/StartingScreen.js';
 import App from './App';
@@ -9,8 +8,8 @@ import Shop from "./pages/Shop.js";
 import Stages from "./pages/Stages.js";
 import Profile from "./pages/Profile.js";
 import Videos from "./pages/Videos.js";
-// import MainMenu from "./pages/MainMenu.js";
-// import MainMenu from "./pages/MainMenu.js";
+import './fonts/Recoleta-Bold.ttf';
+import './fonts/Recoleta-RegularDEMO.otf';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
