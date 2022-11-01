@@ -1,7 +1,6 @@
-import { render } from '@testing-library/react';
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
-import styles from "./Profile.css";
+// import styles from "./Profile.css";
 import rayTrace from "../pics/raytrace.mp4";
 import Pic1 from '../pics/photo-gallery/pic1.jpg';
 
@@ -19,7 +18,7 @@ function Profile(){
             <Navbar/>
             <div className="profile-container">
                 <div className="pic">
-                    <img src={Pic1}/>
+                    <img src={Pic1} alt="profile picture"/>
                 </div>
                 <div className = "text">
                 <span>

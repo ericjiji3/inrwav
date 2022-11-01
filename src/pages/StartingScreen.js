@@ -1,9 +1,8 @@
-import React, {Component,useState, useEffect} from 'react';
+import React, {Component} from 'react';
 import MainMenu from './MainMenu.js';
-import Shatter from '../components/Shatter.js';
-import styles from "./StartingScreen.css";
+// import Shatter from '../components/Shatter.js';
+// import styles from "./StartingScreen.css";
 import logo from "../pics/inrwav-logo.png";
-import $ from "jquery";
 
 class StartingScreen extends Component{
     constructor(props){
@@ -32,10 +31,10 @@ class StartingScreen extends Component{
         this.setState({clicked: true});
         console.log("shatter");
         
-        var pieces = 70,
-        speed = 1,
-        pieceW = 30,
-        pieceH = 30;
+        // var pieces = 70,
+        // speed = 1,
+        // pieceW = 30,
+        // pieceH = 30;
         // $('.logo-description .logo').hide();
 
         // for (var i = pieces - 1; i >= 0; i--) {

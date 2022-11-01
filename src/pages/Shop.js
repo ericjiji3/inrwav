@@ -1,7 +1,6 @@
-import { render } from '@testing-library/react';
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
-import styles from "./Shop.css";
+// import styles from "./Shop.css";
 import rayTrace from "../pics/raytrace.mp4";
 
 function Shop(){

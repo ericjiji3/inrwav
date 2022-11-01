@@ -1,6 +1,4 @@
-import { render } from '@testing-library/react';
-import React, { useEffect, useRef } from 'react';
-import styles from "./Contact.css";
+import React, {useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact(){

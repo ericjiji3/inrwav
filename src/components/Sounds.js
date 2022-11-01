@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from './Sounds.css';
+// import styles from './Sounds.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faSpotify,
     faApple,
     faItunesNote,
     faAmazon,
-    faGooglePlay,
     faYoutube,
     faDeezer
   } from "@fortawesome/free-brands-svg-icons";

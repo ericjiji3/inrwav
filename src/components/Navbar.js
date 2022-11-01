@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Navbar.css';
+// import styles from './Navbar.css';
 import { Link } from "react-router-dom";
 import Modal from 'react-modal';
 import Sounds from '../components/Sounds.js';
@@ -47,28 +47,24 @@ function Navbar(){
     const [soundsModalIsOpen, setIsSoundsOpen] = React.useState(false);
     const [reachModalIsOpen, setIsReachOpen] = React.useState(false);
 
-    function openModal(e) {
+    // function openModal(e) {
         
-        if(e.target.className == 'sounds'){
-            setIsSoundsOpen(true);
-        }else{
-            setIsReachOpen(true);
-        }
-      }
+    //     if(e.target.className == 'sounds'){
+    //         setIsSoundsOpen(true);
+    //     }else{
+    //         setIsReachOpen(true);
+    //     }
+    //   }
+
     
-      function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        // subtitle.style.color = '#f00';
-      }
-    
-      function closeModal(e) {
-          console.log(e.target.className);
-        if(e.target.className == 'sounds'){
-            setIsSoundsOpen(false);
-        }else{
-            setIsReachOpen(false);
-        }
-      }
+    //   function closeModal(e) {
+    //       console.log(e.target.className);
+    //     if(e.target.className == 'sounds'){
+    //         setIsSoundsOpen(false);
+    //     }else{
+    //         setIsReachOpen(false);
+    //     }
+    //   }
 
     return(
         <div className="navbar-container">

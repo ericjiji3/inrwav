@@ -1,7 +1,7 @@
-import { render } from '@testing-library/react';
-import React, { useEffect, useRef } from "react";
+
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import styles from "./MainMenu.css";
+
 import Navbar from "../components/Navbar.js";
 import ImageGallery from 'react-image-gallery';
 import Pic1 from '../pics/photo-gallery/pic1.jpg';
@@ -12,7 +12,6 @@ import Pic5 from '../pics/photo-gallery/pic5.jpg';
 import Pic6 from '../pics/photo-gallery/pic6.png';
 import Pic7 from '../pics/photo-gallery/pic7.jpeg';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
-import rayTrace from "../pics/raytrace.mp4";
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
 
 function MainMenu(){
@@ -52,7 +51,7 @@ function MainMenu(){
             <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false}/>
             <div className="album">
                 <div className="album-text">LATEST SOUNDS</div>
-                <img className="album-pic" src={Pic6}/>
+                <img className="album-pic" alt="Latest Album" src={Pic6}/>
             </div>
             <iframe className = "featured-video" src="https://www.youtube.com/embed/vgjgmDccKyk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
             <div className="press">
@@ -63,7 +62,7 @@ function MainMenu(){
                     
                     <figure>
                         <Link to="/profile" className="about">
-                        <img src={Pic7}/>
+                        <img src={Pic7} alt="Profile"/>
                         <div className='overlay'>
                             <h5>PROFILE</h5>
                             <p>Learn more about the artist behind his music and his work on and off the stage</p>
@@ -76,7 +75,7 @@ function MainMenu(){
                     
                     <figure>
                         <a href={'https://open.spotify.com/episode/5NOcX0vwjtsIWonBYa3d3a'} className = "about" style = {{textDecoration: "none"}}>
-                        <img src={Podcast}/>
+                        <img src={Podcast} alt="Podcast"/>
                         <div className='overlay'>
                             <h5>BEVO BEATS: HIP HOP ON THE 40 ACRES</h5>
                             <p>Listen to Jordon on this episode of Bevo Beats, focusing on the the disconnect between local hip hop scenes and the UT campus.</p>

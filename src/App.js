@@ -1,12 +1,8 @@
 import logo from "./pics/inrwav-logo.png";
 import MainMenu from './pages/MainMenu.js';
-import Navbar from './components/Navbar.js';
 import './App.css';
-import { Link } from "react-router-dom";
-import startingScreen from "./pics/startingScreen.mp4";
-import startingScreenCompress from "./pics/startCompress.mp4";
 import starsCompress from "./pics/StarsComp.mp4";
-import React, {Component,useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 
 function App(){

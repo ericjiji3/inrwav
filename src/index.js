@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import './index.css';
-import StartingScreen from './pages/StartingScreen.js';
 import App from './App';
 import MainMenu from "./pages/MainMenu.js";
 import Shop from "./pages/Shop.js";
