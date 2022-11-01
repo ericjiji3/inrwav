@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from './Sounds.css';
+import './Sounds.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faSpotify,

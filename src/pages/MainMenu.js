@@ -1,7 +1,6 @@
-
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-
+import './MainMenu.css';
 import Navbar from "../components/Navbar.js";
 import ImageGallery from 'react-image-gallery';
 import Pic1 from '../pics/photo-gallery/pic1.jpg';

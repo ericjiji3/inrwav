@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from './Navbar.css';
+import './Navbar.css';
 import { Link } from "react-router-dom";
 import Modal from 'react-modal';
 import Sounds from '../components/Sounds.js';

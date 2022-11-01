@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import rayTrace from "../pics/raytrace.mp4";
+import './Videos.css';
 
 function Videos(){
     const videoRef = useRef();

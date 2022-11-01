@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MainMenu from './MainMenu.js';
 // import Shatter from '../components/Shatter.js';
-// import styles from "./StartingScreen.css";
+import "./StartingScreen.css";
 import logo from "../pics/inrwav-logo.png";
 
 class StartingScreen extends Component{

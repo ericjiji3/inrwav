@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import Banner from "../pics/banner.PNG";
+import './Stages.css';
 import rayTrace from "../pics/raytrace.mp4";
 
 function Stages(){

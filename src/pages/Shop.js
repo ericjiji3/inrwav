@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
-// import styles from "./Shop.css";
+import "./Shop.css";
 import rayTrace from "../pics/raytrace.mp4";
 
 function Shop(){
