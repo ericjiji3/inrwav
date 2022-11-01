@@ -1,8 +1,5 @@
-
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
-import trailer from "../pics/trailer.MOV";
-import styles from "./Videos.css";
 import rayTrace from "../pics/raytrace.mp4";
 
 function Videos(){
@@ -21,10 +18,6 @@ function Videos(){
                 <iframe className = "paint" src="https://www.youtube.com/embed/zxA9LQOj2_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                 <iframe className = "coffee" src="https://www.youtube.com/embed/jajJPlCs2nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                 <iframe className = "for-the-ride" src="https://www.youtube.com/embed/a6_N8gNGPPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-                {/* <video className = "trailer" controls>
-                    <source src={trailer}>
-                    </source>
-                </video> */}
             </div>
             
             <Navbar/>

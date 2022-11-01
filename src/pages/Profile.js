@@ -18,7 +18,7 @@ function Profile(){
             <Navbar/>
             <div className="profile-container">
                 <div className="pic">
-                    <img src={Pic1} alt="profile picture"/>
+                    <img src={Pic1} alt="profile"/>
                 </div>
                 <div className = "text">
                 <span>

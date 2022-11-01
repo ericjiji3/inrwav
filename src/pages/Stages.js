@@ -1,7 +1,5 @@
-import { render } from '@testing-library/react';
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
-import styles from "./Stages.css";
 import Banner from "../pics/banner.PNG";
 import rayTrace from "../pics/raytrace.mp4";
 
@@ -16,7 +14,7 @@ function Stages(){
                 <source src={rayTrace} type="video/mp4"/>
             </video>
             <h2 className="jordon-header">JORDON</h2>
-            <img className="banner" src={Banner}/>
+            <img className="banner" alt="shows" src={Banner}/>
             <h2>COMING SOON...</h2>
             <Navbar/>
             <div className="noise-filter"></div>
