@@ -77,7 +77,6 @@ function Navbar(){
                 <h2 className="sounds" onClick={() => setIsSoundsOpen(true)}>SOUNDS</h2>
                 <Modal
                     isOpen={soundsModalIsOpen}
-                    onAfterOpen={afterOpenModal}
                     onRequestClose={() => setIsSoundsOpen(false)}
                     style={customSoundsStyles}
                     contentLabel="Example Modal"
@@ -98,7 +97,6 @@ function Navbar(){
                     <h2 onClick={() => setIsReachOpen(true)}>REACH</h2>
                     <Modal
                     isOpen={reachModalIsOpen}
-                    onAfterOpen={afterOpenModal}
                     onRequestClose={() => setIsReachOpen(false)}
                     style={customReachStyles}
                     contentLabel="Example Modal"
