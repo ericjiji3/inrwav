@@ -47,15 +47,22 @@ function Navbar(){
     const [soundsModalIsOpen, setIsSoundsOpen] = React.useState(false);
     const [reachModalIsOpen, setIsReachOpen] = React.useState(false);
 
-    // function openModal(e) {
-        
-    //     if(e.target.className == 'sounds'){
-    //         setIsSoundsOpen(true);
-    //     }else{
-    //         setIsReachOpen(true);
-    //     }
-    //   }
-
+    function openSoundModal(e) {
+        e.preventDefault();
+        setIsSoundsOpen(true);
+    }
+    function closeSoundModal(e){
+        e.preventDefault();
+        setIsSoundsOpen(false);
+    }
+    function openReachModal(e){
+        e.preventDefault();
+        setIsReachOpen(true);
+    }
+    function closeReachModal(e){
+        e.preventDefault();
+        setIsReachOpen(false);
+    }
     
     //   function closeModal(e) {
     //       console.log(e.target.className);
@@ -74,13 +81,14 @@ function Navbar(){
                 </li>
                 <li className="item">
                 
-                <h2 className="sounds" onClick={() => setIsSoundsOpen(true)}>SOUNDS</h2>
+                <h2 className="sounds" onClick={openSoundModal}>SOUNDS</h2>
                 <Modal
                     isOpen={soundsModalIsOpen}
-                    onRequestClose={() => setIsSoundsOpen(false)}
+                    onRequestClose={closeSoundModal}
                     style={customSoundsStyles}
                     contentLabel="Example Modal"
-                    className="sound-modal"
+                    className={soundsModalIsOpen ? "sound-modal" : "sound-modal closing"}
+                    closeTimeoutMS={1000}
                 >
                     <Sounds/>
                 </Modal>
@@ -94,13 +102,14 @@ function Navbar(){
                     <Link to="/shop"><h2>BROWSE</h2></Link>
                 </li>
                 <li className="item">
-                    <h2 onClick={() => setIsReachOpen(true)}>REACH</h2>
+                    <h2 onClick={openReachModal}>REACH</h2>
                     <Modal
                     isOpen={reachModalIsOpen}
-                    onRequestClose={() => setIsReachOpen(false)}
+                    onRequestClose={closeReachModal}
                     style={customReachStyles}
                     contentLabel="Example Modal"
-                    className="reach-modal"
+                    className={reachModalIsOpen ? "reach-modal" : "reach-modal closing"}
+                    closeTimeoutMS={1000}
                 >
                     <Contact/>
                 </Modal>
