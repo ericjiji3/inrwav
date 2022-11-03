@@ -10,7 +10,7 @@ function Shop(){
     };
     return(
         <div className="shop">
-            <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
+            <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTrace} type="video/mp4"/>
             </video>
             <h2 className="jordon-header">JORDON</h2>

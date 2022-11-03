@@ -314,19 +314,7 @@ overflow: hidden;
 overflow: hidden;
 }
 
-/* .App .starting-screen .shatter-logo{
-  background: url('./pics/inrwav-logo.png') 0 286px, url('./pics/inrwav-logo.png') 0 -286px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 19%;
-  height: 19%;
-  position: fixed;
-  top: 37%;
-  right: 40%;
-  filter: blur(1.5px);
-  animation: shatter 3s ease;
-} */
+
 .App .starting-screen .shatter-logo{
   position: absolute;
 }
@@ -390,6 +378,91 @@ overflow: hidden;
   background-color: unset;
   z-index: -1;
 }
+
+@media(max-width: 500px){
+  .App .starting-screen .logo-description .logo-11{
+    clip: rect(0, 12.6px, 7px, 0);
+  }
+  .App .starting-screen .logo-description .logo-21{
+    clip: rect(0px, 25.2px, 7px, 12.6px);
+  }
+  .App .starting-screen .logo-description .logo-31{
+    clip: rect(0px, 37.8px, 7px, 25.2px);
+  }
+  .App .starting-screen .logo-description .logo-41{
+    clip: rect(0px, 50.4px, 7px, 37.8px);
+  }
+  .App .starting-screen .logo-description .logo-51{
+    clip: rect(0px, 63px, 7px, 50.4px);
+  }
+  .App .starting-screen .logo-description .logo-12{
+    clip: rect(7px, 12.6px, 14px, 0);
+  }
+  .App .starting-screen .logo-description .logo-22{
+    clip: rect(7px, 25.2px, 14px, 12.6px);
+  }
+  .App .starting-screen .logo-description .logo-32{
+    clip: rect(7px, 37.8px, 14px, 25.2px);
+  }
+  .App .starting-screen .logo-description .logo-42{
+    clip: rect(7px, 50.4px, 14px, 37.8px);
+  }
+  .App .starting-screen .logo-description .logo-52{
+    clip: rect(7px, 63px, 14px, 50.4px);
+  }
+  .App .starting-screen .logo-description .logo-13{
+    clip: rect(14px, 12.6px, 21px, 0);
+  }
+  .App .starting-screen .logo-description .logo-23{
+    clip: rect(14px, 25.2px, 21px, 12.6px);
+  }
+  .App .starting-screen .logo-description .logo-33{
+    clip: rect(14px, 37.8px, 21px, 25.2px);
+  }
+  .App .starting-screen .logo-description .logo-43{
+    clip: rect(14px, 50.4px, 21px, 37.8px);
+  }
+  .App .starting-screen .logo-description .logo-53{
+    clip: rect(14px, 63px, 21px, 50.4px);
+  }
+  .App .starting-screen .logo-description .logo-14{
+    clip: rect(21px, 12.6px, 28px, 0);
+  }
+  .App .starting-screen .logo-description .logo-24{
+    clip: rect(21px, 25.2px, 28px, 12.6px);
+  }
+  .App .starting-screen .logo-description .logo-34{
+    clip: rect(21px, 37.8px, 28px, 25.2px);
+  }
+  .App .starting-screen .logo-description .logo-44{
+    clip: rect(21px, 50.4px, 28px, 37.8px);
+  }
+  .App .starting-screen .logo-description .logo-54{
+    clip: rect(21px, 63px, 28px, 50.4px);
+  }
+  .App .starting-screen .logo-description .logo-15{
+    clip: rect(28px, 12.6px, 35px, 0);
+  }
+  .App .starting-screen .logo-description .logo-25{
+    clip: rect(28px, 25.2px, 35px, 12.6px);
+  }
+  .App .starting-screen .logo-description .logo-35{
+    clip: rect(28px, 37.8px, 35px, 25.2px);
+  }
+  .App .starting-screen .logo-description .logo-45{
+    clip: rect(28px, 50.4px, 35px, 37.8px);
+  }
+  .App .starting-screen .logo-description .logo-55{
+    clip: rect(28px, 63px, 35px, 50.4px);
+  }
+}
+
+
+
+
+
+
+
 
 @keyframes menu-intro {
   100% {

@@ -42,7 +42,7 @@ function MainMenu(){
       };
     return(
         <div className="main-menu">
-            <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()}>
+            <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
             <Navbar/>
