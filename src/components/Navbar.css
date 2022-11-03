@@ -107,7 +107,7 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
 
 @media (max-width: 500px){
     .navbar-container.close{
-        bottom: -35%;
+        bottom: -45%;
         transition: all 1s ease;
     }
     .navbar-container.open{
