@@ -4,10 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faSpotify,
     faApple,
-    faItunesNote,
-    faAmazon,
-    faYoutube,
-    faDeezer
+    faYoutube
   } from "@fortawesome/free-brands-svg-icons";
 
 function Sounds(){

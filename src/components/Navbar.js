@@ -69,20 +69,12 @@ function Navbar(){
         setNav(!nav);
         console.log(nav);
     }
-    //   function closeModal(e) {
-    //       console.log(e.target.className);
-    //     if(e.target.className == 'sounds'){
-    //         setIsSoundsOpen(false);
-    //     }else{
-    //         setIsReachOpen(false);
-    //     }
-    //   }
 
     return(
         <div className={nav ? "navbar-container open" : "navbar-container close"}>
             <ul className="navbar">
                 <li className="mobile-toggle" onClick={toggleNav}>
-                    <img src={NavArrow}></img>
+                    <img src={NavArrow} alt="mobile arrow"></img>
                 </li>
 
 

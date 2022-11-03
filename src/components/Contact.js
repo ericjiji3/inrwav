@@ -1,5 +1,5 @@
 import React, {useRef, useState } from 'react';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 
@@ -8,7 +8,6 @@ function Contact(){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [submit, setSubmit] = useState(false);
 
     const handleNameChange = (e) => {
         setName(e.target.value)
