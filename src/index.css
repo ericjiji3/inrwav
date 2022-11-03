@@ -26,4 +26,5 @@ body {
 } */
 html, body, #root, .app{
   /* margin-bottom: 75px; */
+  font-family: 'recoleta' ;
 }
