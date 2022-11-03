@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: 'recoleta' ;
+  font-family: 'recoleta';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,5 +26,4 @@ body {
 } */
 html, body, #root, .app{
   /* margin-bottom: 75px; */
-  font-family: 'recoleta' ;
 }
