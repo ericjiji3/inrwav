@@ -199,6 +199,7 @@
     }
     .main-menu .press .press-figures{
         flex-direction: column;
+        margin-bottom: 30px;
     }
     .main-menu .press .press-figures figure{
         width: 100%;
