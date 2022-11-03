@@ -34,3 +34,14 @@
     background-color: unset;
     z-index: 0;
 }
+
+@media(max-width: 500px){
+    .stages video{
+        height: 100%;
+        object-fit: cover;
+    }
+    .stages .banner{
+        height: 150px;
+        width: 100%;
+    }
+}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Modal from 'react-modal';
 import Sounds from '../components/Sounds.js';
 import Contact from '../components/Contact.js';
-
+import NavArrow from '../pics/navBar/nav-arrow.png';
 
 Modal.setAppElement('#root');
 
@@ -46,6 +46,7 @@ content: {
 function Navbar(){
     const [soundsModalIsOpen, setIsSoundsOpen] = React.useState(false);
     const [reachModalIsOpen, setIsReachOpen] = React.useState(false);
+    const [nav, setNav] = React.useState(false);
 
     function openSoundModal(e) {
         e.preventDefault();
@@ -63,7 +64,11 @@ function Navbar(){
         e.preventDefault();
         setIsReachOpen(false);
     }
-    
+    function toggleNav(e){
+        e.preventDefault();
+        setNav(!nav);
+        console.log(nav);
+    }
     //   function closeModal(e) {
     //       console.log(e.target.className);
     //     if(e.target.className == 'sounds'){
@@ -74,8 +79,13 @@ function Navbar(){
     //   }
 
     return(
-        <div className="navbar-container">
+        <div className={nav ? "navbar-container open" : "navbar-container close"}>
             <ul className="navbar">
+                <li className="mobile-toggle" onClick={toggleNav}>
+                    <img src={NavArrow}></img>
+                </li>
+
+
                 <li className="item">
                     <Link to="/home"><h2>HOME</h2></Link>
                 </li>

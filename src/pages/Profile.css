@@ -118,3 +118,29 @@
         fill: white;
     }
 }
+
+@media(max-width: 500px){
+    .profile video{
+        height: 100%;
+        object-fit: cover;
+    }
+    .profile .profile-container{
+        width: 100%;
+    }
+    .profile .profile-container .pic{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .profile .profile-container .pic img{
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+        object-position: 100% 70%;
+    }
+    .profile .profile-container .text{
+        width: 90%;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+}
