@@ -5,6 +5,17 @@
   /* filter: blur(3px); */
   font-family: 'recoleta';
   overflow: hidden;
+  animation: 2s firstLoad reverse forwards;
+}
+@keyframes firstLoad{
+  0%{
+    background-color: white;
+    opacity: 100%;
+  }
+  100%{
+    background-color: unset;
+    opacity: 0%;
+  }
 }
 .App h1,h2,h3,h4,h5,h6{
   font-family: 'recoleta-bold';
@@ -394,7 +405,7 @@ overflow: hidden;
   .App .starting-screen .logo-description .logo-21{
     /* clip: rect(0px, 25.2px, 7px, 12.6px);
     animation: shatter-21-mobile 3s ease forwards; */
-    clip: rect(13px, 40px, 25px, 0px);
+    clip: rect(15px, 40px, 25px, 0px);
     animation: shatter-left 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-31{
