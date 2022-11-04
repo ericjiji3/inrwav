@@ -8,7 +8,6 @@ import Pic2 from '../pics/photo-gallery/pic2.jpg';
 import Pic3 from '../pics/photo-gallery/pic3.jpg';
 import Pic4 from '../pics/photo-gallery/pic4.jpg';
 import Pic5 from '../pics/photo-gallery/pic5.jpg';
-import Pic6 from '../pics/photo-gallery/pic6.png';
 import Pic7 from '../pics/photo-gallery/pic7.jpeg';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
