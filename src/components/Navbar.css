@@ -110,14 +110,14 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
         bottom: 0;
     }
     .navbar-container .navbar{
-        padding: 0;
+        padding: 0 20px;
     }
     .navbar-container .navbar > *{
         justify-content: center;
         text-align: center;
     }
     .navbar-container .navbar .item{
-        margin: 10px;
+        margin: 10px 5px;
 
     }
     .navbar-container .navbar .item h2{
