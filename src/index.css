@@ -1,11 +1,11 @@
 
 @font-face{
   font-family: 'recoleta-bold';
-  src: url(./fonts/Recoleta-Bold.ttf);
+  src: url(./fonts/SandeMore-Regular.otf);
 }
 @font-face{
   font-family: 'recoleta';
-  src: url(./fonts/Recoleta-RegularDEMO.otf);
+  src: url(./fonts/SandeMore-Regular.otf);
 }
 
 body {

@@ -384,12 +384,16 @@ overflow: hidden;
     filter: unset;
   }
   .App .starting-screen .logo-description .logo-11{
+    /* clip: rect(0px, 12.6px, 7px, 0px);
+    animation: shatter-11-mobile 3s ease forwards; */
     clip: rect(0px, 60px, 12px, 0px);
-    animation: shatter-mobile-up 3s ease forwards;
+    animation: shatter-right 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-21{
+    /* clip: rect(0px, 25.2px, 7px, 12.6px);
+    animation: shatter-21-mobile 3s ease forwards; */
     clip: rect(12px, 40px, 25px, 0px);
-    animation: shatter-mobile-down 3s ease forwards;
+    animation: shatter-left 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-31{
     /* clip: rect(0px, 37.8px, 7px, 25.2px); */
@@ -464,7 +468,7 @@ overflow: hidden;
     display: none;
   }
   .App .starting-screen .logo-description .logo-15{
-    /* clip: rect(28px, 12.6px, 35px, 0); */
+    clip: rect(28px, 12.6px, 35px, 0);
     display: none;
   }
   .App .starting-screen .logo-description .logo-25{
@@ -512,22 +516,22 @@ overflow: hidden;
 
 @keyframes shatter-left{
   100%{
-    transform: scale(10) translate(-150px)
+    transform: scale(10) translateX(-50px)
   }
 }
 @keyframes shatter-right{
   100%{
-    transform: scale(10) translateX(-300px);
+    transform: scale(10) translateX(50px);
   }
 }
 @keyframes shatter-up{
   100%{
-    transform: scale(10) translateY(-300px);
+    transform: scale(10) translateX(-300px);
   }
 }
 @keyframes shatter-down{
   100%{
-    transform: scale(10) translateY(300px);
+    transform: scale(10) translateX(300px);
   }
 }
 @keyframes shatter-11{
@@ -537,7 +541,28 @@ overflow: hidden;
     opacity: 0;
   }
 }
+@keyframes shatter-11-mobile{
+  100%{
+    transform: scale(5) translate(-80%, -60%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 @keyframes shatter-21{
+  100%{
+    transform: scale(5) translate(-20%, -40%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-21-mobile{
+  100%{
+    transform: scale(5) translate(-60%, -100%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-21-mobile{
   100%{
     transform: scale(5) translate(-20%, -40%);
     overflow: hidden;
