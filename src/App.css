@@ -5,7 +5,7 @@
   /* filter: blur(3px); */
   font-family: 'recoleta';
   overflow: hidden;
-  animation: 2s firstLoad reverse forwards;
+  /* animation: 2s firstLoad reverse forwards; */
 }
 @keyframes firstLoad{
   0%{
@@ -400,13 +400,13 @@ overflow: hidden;
   .App .starting-screen .logo-description .logo-11{
     /* clip: rect(0px, 12.6px, 7px, 0px);
     animation: shatter-11-mobile 3s ease forwards; */
-    clip: rect(0px, 60px, 12px, 0px);
+    clip: rect(0px, 60px, 11px, 0px);
     animation: shatter-right 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-21{
     /* clip: rect(0px, 25.2px, 7px, 12.6px);
     animation: shatter-21-mobile 3s ease forwards; */
-    clip: rect(10px, 40px, 25px, 0px);
+    clip: rect(13px, 40px, 25px, 0px);
     animation: shatter-left 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-31{
@@ -511,7 +511,6 @@ overflow: hidden;
     color: white;
     text-align: center;
     width: 100%;
-    animation: firstTextLoad 2s linear forwards;
   }
   .App .starting-screen .disclaimer.hide{
     animation: hide-text 1.5s linear forwards;
@@ -816,7 +815,7 @@ overflow: hidden;
 /* 50%{
   transform: translateY(15px);
 } */
-0%{
+/* 0%{
   opacity: 0%
 }
 33%{
@@ -824,10 +823,9 @@ overflow: hidden;
 }
 66%{
   opacity: 100%;
-}
+} */
 100%{
   right: 0;
-  opacity: 100%;
   /* transform: translateY(0); */
 }
 }
