@@ -17,6 +17,7 @@
     opacity: 0%;
   }
 }
+
 .App h1,h2,h3,h4,h5,h6{
   font-family: 'recoleta-bold';
 }
@@ -405,7 +406,7 @@ overflow: hidden;
   .App .starting-screen .logo-description .logo-21{
     /* clip: rect(0px, 25.2px, 7px, 12.6px);
     animation: shatter-21-mobile 3s ease forwards; */
-    clip: rect(15px, 40px, 25px, 0px);
+    clip: rect(10px, 40px, 25px, 0px);
     animation: shatter-left 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-31{
@@ -510,6 +511,7 @@ overflow: hidden;
     color: white;
     text-align: center;
     width: 100%;
+    animation: firstTextLoad 2s linear forwards;
   }
   .App .starting-screen .disclaimer.hide{
     animation: hide-text 1.5s linear forwards;
@@ -799,7 +801,14 @@ overflow: hidden;
     opacity: 1;
   }
 }
-
+@keyframes firstTextLoad{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
 @keyframes logo-animation-horizontal{
 /* 0%{
   transform: translateX(-500);
@@ -807,8 +816,18 @@ overflow: hidden;
 /* 50%{
   transform: translateY(15px);
 } */
+0%{
+  opacity: 0%
+}
+33%{
+  opacity: 50%
+}
+66%{
+  opacity: 100%;
+}
 100%{
   right: 0;
+  opacity: 100%;
   /* transform: translateY(0); */
 }
 }
