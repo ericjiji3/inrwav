@@ -390,40 +390,52 @@ overflow: hidden;
     clip: rect(0px, 25.2px, 7px, 12.6px);
   }
   .App .starting-screen .logo-description .logo-31{
-    clip: rect(0px, 37.8px, 7px, 25.2px);
+    /* clip: rect(0px, 37.8px, 7px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-41{
-    clip: rect(0px, 50.4px, 7px, 37.8px);
+    /* clip: rect(0px, 50.4px, 7px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-51{
-    clip: rect(0px, 63px, 7px, 50.4px);
+    /* clip: rect(0px, 63px, 7px, 50.4px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-12{
-    clip: rect(7px, 12.6px, 14px, 0);
+    /* clip: rect(7px, 12.6px, 14px, 0); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-22{
-    clip: rect(7px, 25.2px, 14px, 12.6px);
+    /* clip: rect(7px, 25.2px, 14px, 12.6px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-32{
-    clip: rect(7px, 37.8px, 14px, 25.2px);
+    /* clip: rect(7px, 37.8px, 14px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-42{
-    clip: rect(7px, 50.4px, 14px, 37.8px);
+    /* clip: rect(7px, 50.4px, 14px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-52{
-    clip: rect(7px, 63px, 14px, 50.4px);
+    /* clip: rect(7px, 63px, 14px, 50.4px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-13{
-    clip: rect(14px, 12.6px, 21px, 0);
+    /* clip: rect(14px, 12.6px, 21px, 0); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-23{
-    clip: rect(14px, 25.2px, 21px, 12.6px);
+    /* clip: rect(14px, 25.2px, 21px, 12.6px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-33{
-    clip: rect(14px, 37.8px, 21px, 25.2px);
+    /* clip: rect(14px, 37.8px, 21px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-43{
-    clip: rect(14px, 50.4px, 21px, 37.8px);
+    /* clip: rect(14px, 50.4px, 21px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-53{
     clip: rect(14px, 63px, 21px, 50.4px);
