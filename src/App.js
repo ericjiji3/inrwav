@@ -36,7 +36,7 @@ function App(){
       <div className={menu ? "starting-screen hidden" : "starting-screen"}>
         
         <div className="video-container">
-        <video autoPlay loop defaultMuted playsInline>
+        <video autoPlay loop muted playsInline>
           <source src={starsCompress} type="video/mp4"/>
         </video>
         </div>

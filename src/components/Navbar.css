@@ -106,7 +106,31 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
 }
 
 @media (max-width: 500px){
-    .navbar-container.close{
+    .navbar-container{
+        bottom: 0;
+    }
+    .navbar-container .navbar{
+        padding: 0;
+    }
+    .navbar-container .navbar > *{
+        justify-content: center;
+        text-align: center;
+    }
+    .navbar-container .navbar .item{
+        margin: 10px;
+
+    }
+    .navbar-container .navbar .item h2{
+        color: white;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    .navbar-container .navbar .item a h2{
+        color: white;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    /* .navbar-container.close{
         bottom: -46%;
         transition: all 1s ease;
     }
@@ -148,7 +172,7 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
     .navbar-container .navbar .item a h2{
         color: white;
         font-size: 15px;
-    }
+    } */
     body.ReactModal__Body--open .ReactModalPortal .sound-modal{
         width: 70%!important;
     }

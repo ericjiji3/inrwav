@@ -4,18 +4,11 @@ import { Link } from "react-router-dom";
 import Modal from 'react-modal';
 import Sounds from '../components/Sounds.js';
 import Contact from '../components/Contact.js';
-import NavArrow from '../pics/navBar/nav-arrow.png';
 
 Modal.setAppElement('#root');
 
 const customSoundsStyles = {
     content: {
-    //   top: '50%',
-    //   left: '50%',
-    //   right: 'auto',
-    //   bottom: 'auto',
-    //   marginRight: '-50%',
-    //   transform: 'translate(-50%, -50%)',
         width: '20%',
         height: 'fit-content',
         margin: 'auto'
@@ -23,12 +16,6 @@ const customSoundsStyles = {
   };
 const customReachStyles = {
 content: {
-//   top: '50%',
-//   left: '50%',
-//   right: 'auto',
-//   bottom: 'auto',
-//   marginRight: '-50%',
-//   transform: 'translate(-50%, -50%)',
     position: 'absolute',
     inset: '40px',
     border: '1px solid rgb(204, 204, 204)',
@@ -46,7 +33,6 @@ content: {
 function Navbar(){
     const [soundsModalIsOpen, setIsSoundsOpen] = React.useState(false);
     const [reachModalIsOpen, setIsReachOpen] = React.useState(false);
-    const [nav, setNav] = React.useState(false);
 
     function openSoundModal(e) {
         e.preventDefault();
@@ -64,19 +50,10 @@ function Navbar(){
         e.preventDefault();
         setIsReachOpen(false);
     }
-    function toggleNav(e){
-        e.preventDefault();
-        setNav(!nav);
-        console.log(nav);
-    }
 
     return(
-        <div className={nav ? "navbar-container open" : "navbar-container close"}>
+        <div className="navbar-container">
             <ul className="navbar">
-                <li className="mobile-toggle" onClick={toggleNav}>
-                    <img src={NavArrow} alt="mobile arrow"></img>
-                </li>
-
 
                 <li className="item">
                     <Link to="/home"><h2>HOME</h2></Link>
