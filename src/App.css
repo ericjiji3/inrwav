@@ -339,7 +339,9 @@ overflow: hidden;
   animation: reveal-text 1.5s linear;
 }
 
-
+.App .starting-screen .disclaimer{
+  display: none;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -392,7 +394,7 @@ overflow: hidden;
   .App .starting-screen .logo-description .logo-21{
     /* clip: rect(0px, 25.2px, 7px, 12.6px);
     animation: shatter-21-mobile 3s ease forwards; */
-    clip: rect(12px, 40px, 25px, 0px);
+    clip: rect(13px, 40px, 25px, 0px);
     animation: shatter-left 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-31{
@@ -486,6 +488,20 @@ overflow: hidden;
   .App .starting-screen .logo-description .logo-55{
     /* clip: rect(28px, 63px, 35px, 50.4px); */
     display: none;
+  }
+  .App .starting-screen .disclaimer{
+    display: block;
+    font-family: 'recoleta';
+    font-size: 8px;
+    position: absolute;
+    top: 95%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  .App .starting-screen .disclaimer.hide{
+    animation: hide-text 1.5s linear forwards;
   }
 }
 
@@ -736,7 +752,14 @@ overflow: hidden;
 }
 
 
-
+@keyframes hide-text {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
 @keyframes reveal-text {
   0%{
     opacity: 0%;
