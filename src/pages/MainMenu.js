@@ -8,10 +8,10 @@ import Pic2 from '../pics/photo-gallery/pic2.jpg';
 import Pic3 from '../pics/photo-gallery/pic3.jpg';
 import Pic4 from '../pics/photo-gallery/pic4.jpg';
 import Pic5 from '../pics/photo-gallery/pic5.jpg';
-import Pic6 from '../pics/photo-gallery/pic6.png';
 import Pic7 from '../pics/photo-gallery/pic7.jpeg';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
+import FeaturedAlbum from "../pics/photo-gallery/all-is-well.PNG";
 
 function MainMenu(){
     const images = [
@@ -48,11 +48,14 @@ function MainMenu(){
             <Navbar/>
             <h2 className="jordon-header">JORDON</h2>
             <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false}/>
-            <div className="album">
-                <div className="album-text">LATEST SOUNDS</div>
-                <img className="album-pic" alt="Latest Album" src={Pic6}/>
-            </div>
-            <iframe className = "featured-video" src="https://www.youtube.com/embed/vgjgmDccKyk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
+            <a href="https://hypeddit.com/jordon/alliswell">
+                <div className="album">
+                    <div className="album-text">LATEST SOUNDS</div>
+                    <img className="album-pic" alt="Latest Album" src={FeaturedAlbum}/>
+                </div>
+            </a>
+            
+            <iframe className = "featured-video" src="https://www.youtube.com/embed/a6_N8gNGPPQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
             <div className="press">
                 <div className='press-text'>
                     <h1>PRESS</h1>

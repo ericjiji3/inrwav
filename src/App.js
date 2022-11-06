@@ -71,6 +71,7 @@ function App(){
           <h2 className={reveal ? 'show':'hide'}>Press to Continue</h2>
           
         </div>
+        <span className={shatter ? "disclaimer hide" : "disclaimer"}>*FOR OPTIMAL PERFORMANCE TURN OFF POWER MODE</span>
         <div className={shatter ? "noise-filter backdrop" : "noise-filter"}></div>
       </div>
       <div className={menu ? "menu" : "menu hide"}>

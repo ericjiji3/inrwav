@@ -5,7 +5,19 @@
   /* filter: blur(3px); */
   font-family: 'recoleta';
   overflow: hidden;
+  /* animation: 2s firstLoad reverse forwards; */
 }
+@keyframes firstLoad{
+  0%{
+    background-color: white;
+    opacity: 100%;
+  }
+  100%{
+    background-color: unset;
+    opacity: 0%;
+  }
+}
+
 .App h1,h2,h3,h4,h5,h6{
   font-family: 'recoleta-bold';
 }
@@ -339,7 +351,9 @@ overflow: hidden;
   animation: reveal-text 1.5s linear;
 }
 
-
+.App .starting-screen .disclaimer{
+  display: none;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -384,79 +398,122 @@ overflow: hidden;
     filter: unset;
   }
   .App .starting-screen .logo-description .logo-11{
-    clip: rect(0, 12.6px, 7px, 0);
+    /* clip: rect(0px, 12.6px, 7px, 0px);
+    animation: shatter-11-mobile 3s ease forwards; */
+    clip: rect(0px, 60px, 11px, 0px);
+    animation: shatter-right 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-21{
-    clip: rect(0px, 25.2px, 7px, 12.6px);
+    /* clip: rect(0px, 25.2px, 7px, 12.6px);
+    animation: shatter-21-mobile 3s ease forwards; */
+    clip: rect(13px, 40px, 25px, 0px);
+    animation: shatter-left 3s ease forwards;
   }
   .App .starting-screen .logo-description .logo-31{
-    clip: rect(0px, 37.8px, 7px, 25.2px);
+    /* clip: rect(0px, 37.8px, 7px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-41{
-    clip: rect(0px, 50.4px, 7px, 37.8px);
+    /* clip: rect(0px, 50.4px, 7px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-51{
-    clip: rect(0px, 63px, 7px, 50.4px);
+    /* clip: rect(0px, 63px, 7px, 50.4px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-12{
-    clip: rect(7px, 12.6px, 14px, 0);
+    /* clip: rect(7px, 12.6px, 14px, 0); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-22{
-    clip: rect(7px, 25.2px, 14px, 12.6px);
+    /* clip: rect(7px, 25.2px, 14px, 12.6px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-32{
-    clip: rect(7px, 37.8px, 14px, 25.2px);
+    /* clip: rect(7px, 37.8px, 14px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-42{
-    clip: rect(7px, 50.4px, 14px, 37.8px);
+    /* clip: rect(7px, 50.4px, 14px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-52{
-    clip: rect(7px, 63px, 14px, 50.4px);
+    /* clip: rect(7px, 63px, 14px, 50.4px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-13{
-    clip: rect(14px, 12.6px, 21px, 0);
+    /* clip: rect(14px, 12.6px, 21px, 0); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-23{
-    clip: rect(14px, 25.2px, 21px, 12.6px);
+    /* clip: rect(14px, 25.2px, 21px, 12.6px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-33{
-    clip: rect(14px, 37.8px, 21px, 25.2px);
+    /* clip: rect(14px, 37.8px, 21px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-43{
-    clip: rect(14px, 50.4px, 21px, 37.8px);
+    /* clip: rect(14px, 50.4px, 21px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-53{
-    clip: rect(14px, 63px, 21px, 50.4px);
+    /* clip: rect(14px, 63px, 21px, 50.4px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-14{
-    clip: rect(21px, 12.6px, 28px, 0);
+    /* clip: rect(21px, 12.6px, 28px, 0); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-24{
-    clip: rect(21px, 25.2px, 28px, 12.6px);
+    /* clip: rect(21px, 25.2px, 28px, 12.6px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-34{
-    clip: rect(21px, 37.8px, 28px, 25.2px);
+    /* clip: rect(21px, 37.8px, 28px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-44{
-    clip: rect(21px, 50.4px, 28px, 37.8px);
+    /* clip: rect(21px, 50.4px, 28px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-54{
-    clip: rect(21px, 63px, 28px, 50.4px);
+    /* clip: rect(21px, 63px, 28px, 50.4px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-15{
     clip: rect(28px, 12.6px, 35px, 0);
+    display: none;
   }
   .App .starting-screen .logo-description .logo-25{
-    clip: rect(28px, 25.2px, 35px, 12.6px);
+    /* clip: rect(28px, 25.2px, 35px, 12.6px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-35{
-    clip: rect(28px, 37.8px, 35px, 25.2px);
+    /* clip: rect(28px, 37.8px, 35px, 25.2px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-45{
-    clip: rect(28px, 50.4px, 35px, 37.8px);
+    /* clip: rect(28px, 50.4px, 35px, 37.8px); */
+    display: none;
   }
   .App .starting-screen .logo-description .logo-55{
-    clip: rect(28px, 63px, 35px, 50.4px);
+    /* clip: rect(28px, 63px, 35px, 50.4px); */
+    display: none;
+  }
+  .App .starting-screen .disclaimer{
+    display: block;
+    font-family: 'recoleta';
+    font-size: 8px;
+    position: absolute;
+    top: 95%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  .App .starting-screen .disclaimer.hide{
+    animation: hide-text 1.5s linear forwards;
   }
 }
 
@@ -465,7 +522,16 @@ overflow: hidden;
 
 
 
-
+@keyframes shatter-mobile-up{
+  100%{
+    transform: scale(10) translateY(-100%)
+  }
+}
+@keyframes shatter-mobile-down{
+  100%{
+    transform: scale(10) translateY(100%)
+  }
+}
 
 @keyframes menu-intro {
   100% {
@@ -478,22 +544,22 @@ overflow: hidden;
 
 @keyframes shatter-left{
   100%{
-    transform: scale(10) translate(-150px)
+    transform: scale(10) translateX(-50px)
   }
 }
 @keyframes shatter-right{
   100%{
-    transform: scale(10) translateX(-300px);
+    transform: scale(10) translateX(50px);
   }
 }
 @keyframes shatter-up{
   100%{
-    transform: scale(10) translateY(-300px);
+    transform: scale(10) translateX(-300px);
   }
 }
 @keyframes shatter-down{
   100%{
-    transform: scale(10) translateY(300px);
+    transform: scale(10) translateX(300px);
   }
 }
 @keyframes shatter-11{
@@ -503,7 +569,28 @@ overflow: hidden;
     opacity: 0;
   }
 }
+@keyframes shatter-11-mobile{
+  100%{
+    transform: scale(5) translate(-80%, -60%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 @keyframes shatter-21{
+  100%{
+    transform: scale(5) translate(-20%, -40%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-21-mobile{
+  100%{
+    transform: scale(5) translate(-60%, -100%);
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+@keyframes shatter-21-mobile{
   100%{
     transform: scale(5) translate(-20%, -40%);
     overflow: hidden;
@@ -677,8 +764,14 @@ overflow: hidden;
 }
 
 
-
-
+@keyframes hide-text {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
 @keyframes reveal-text {
   0%{
     opacity: 0%;
@@ -707,13 +800,29 @@ overflow: hidden;
     opacity: 1;
   }
 }
-
+@keyframes firstTextLoad{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
 @keyframes logo-animation-horizontal{
 /* 0%{
   transform: translateX(-500);
 } */
 /* 50%{
   transform: translateY(15px);
+} */
+/* 0%{
+  opacity: 0%
+}
+33%{
+  opacity: 50%
+}
+66%{
+  opacity: 100%;
 } */
 100%{
   right: 0;
