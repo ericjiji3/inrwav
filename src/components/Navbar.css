@@ -123,12 +123,12 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
     }
     .navbar-container .navbar .item h2{
         color: white;
-        font-size: 9px;
+        font-size: 13px;
         margin-top: 15px;
     }
     .navbar-container .navbar .item a h2{
         color: white;
-        font-size: 9px;
+        font-size: 13px;
         margin-top: 15px;
     }
     /* .navbar-container.close{
