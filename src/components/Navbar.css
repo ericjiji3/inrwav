@@ -107,7 +107,7 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
 
 @media (max-width: 500px){
     .navbar-container{
-        bottom: -4%;
+        bottom: -4.5%;
     }
     .navbar-container .navbar{
         padding: 40px 20px;
@@ -123,12 +123,12 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
     }
     .navbar-container .navbar .item h2{
         color: white;
-        font-size: 13px;
+        font-size: 11px;
         margin-top: 15px;
     }
     .navbar-container .navbar .item a h2{
         color: white;
-        font-size: 13px;
+        font-size: 11px;
         margin-top: 15px;
     }
     /* .navbar-container.close{
