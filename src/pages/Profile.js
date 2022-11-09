@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import "./Profile.css";
 import rayTrace from "../pics/raytrace.mp4";
-import Pic1 from '../pics/photo-gallery/pic1.jpg';
+import Pic4 from '../pics/photo-gallery/pic4.jpg';
 
 function Profile(){
     const videoRef = useRef();
@@ -18,7 +18,7 @@ function Profile(){
             <Navbar/>
             <div className="profile-container">
                 <div className="pic">
-                    <img src={Pic1} alt="profile"/>
+                    <img src={Pic4} alt="profile"/>
                 </div>
                 <div className = "text">
                 <span>

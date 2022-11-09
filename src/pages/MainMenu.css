@@ -39,7 +39,15 @@
     opacity: 1;
     transition: opacity 450ms ease-out;
 }
-.main-menu .album{
+.main-menu .featured-pic{
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+.main-menu .link-album{
+    text-decoration: none;
+}
+.main-menu .link-album .album{
     display: block;
     /* width: 35%; */
     height: 15rem;
@@ -56,7 +64,7 @@
     /* border-top: 1px solid white;
     padding-top: 50px; */
 }
-.main-menu .album .album-text{
+.main-menu .link-album .album .album-text{
     font-size: 20px;
     font-family: 'recoleta';
     text-align: center;
@@ -65,7 +73,7 @@
     transform: rotate(180deg);
     color: white;
 }
-.main-menu .album .album-pic{
+.main-menu .link-album .album .album-pic{
     width: 15rem;
     height: 15rem;
     display: -webkit-flex;
@@ -184,6 +192,14 @@
     }
     .main-menu .image-gallery{
         width: 85%;
+    }
+    .main-menu .featured-pic{
+        width: 70%;
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        height: 100%;
+        object-position: 100% 100%;
     }
     .main-menu .album{
         height: 10rem;

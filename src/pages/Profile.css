@@ -135,8 +135,8 @@
     .profile .profile-container .pic img{
         width: 100%;
         object-fit: cover;
-        height: 250px;
-        object-position: 100% 70%;
+        height: 350px;
+        object-position: 100% 60%;
     }
     .profile .profile-container .text{
         width: 90%;

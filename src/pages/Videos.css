@@ -19,6 +19,21 @@
     z-index: 1;
     position: relative;
 }
+.videos .videos-container .video-text{
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.videos .videos-container .video-text h3{
+    margin: 0;
+}
+.videos .videos-container .video-text .separator{
+    display: block;
+    width: 560px;
+    border-bottom: 1px solid white;
+    margin: auto;
+    margin-top: 15px;
+}
 .videos .videos-container iframe{
     width: 560px;
     height: 340px;
@@ -47,6 +62,10 @@
         height: 100%;
         object-fit: cover;
 
+    }
+    .videos .videos-container .video-text .separator{
+        width: 100%;
+        margin-top: 5px;
     }
     .videos .videos-container iframe{
         width: 300px;
