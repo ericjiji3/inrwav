@@ -87,21 +87,17 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
 @keyframes popModal{
     0%{
         transform: scale(0);
-        top: 100%;
     }
     100%{
         transform: scale(1);
-        top: 0;
     }
 }
 @keyframes unPop{
     0%{
         transform: scale(1);
-        top: 0;
     }
     100%{
         transform: scale(0);
-        top: 100%;
     }
 }
 

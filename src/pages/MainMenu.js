@@ -47,8 +47,8 @@ function MainMenu(){
             </video>
             <Navbar/>
             <h2 className="jordon-header">JORDON</h2>
-            {/* <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false}/> */}
-            <img className="featured-pic" alt="feature-pic" src={Pic4}/>
+            <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false}/>
+            {/* <img className="featured-pic" alt="feature-pic" src={Pic4}/> */}
             <a className="link-album" href="https://hypeddit.com/jordon/alliswell">
                 <div className="album">
                     <div className="album-text">LATEST SOUNDS</div>

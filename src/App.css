@@ -780,7 +780,17 @@ overflow: hidden;
     opacity: 100%;
   }
 }
-
+@keyframes fade-in-out {
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
 @keyframes slide {
   0% {
     background-position: 50% 0;

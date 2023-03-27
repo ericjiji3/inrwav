@@ -24,7 +24,7 @@ function App(){
       setReveal(true); // count is 0 here
     }, 3000);
     setTimeout(() =>{
-      document.addEventListener('click', clickedFunction)
+      document.addEventListener('click', clickedFunction);
   }, 4500)
   }, []);
 
