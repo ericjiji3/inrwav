@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import './MainMenu.css';
 import Navbar from "../components/Navbar.js";
@@ -9,11 +9,13 @@ import Pic3 from '../pics/photo-gallery/pic3.jpg';
 import Pic4 from '../pics/photo-gallery/pic4.jpg';
 import Pic5 from '../pics/photo-gallery/pic5.jpg';
 import Pic7 from '../pics/photo-gallery/pic7.jpeg';
+import triangle from '../pics/triangle-icon.png';
+import cancel from '../pics/cancel.png';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
 import FeaturedAlbum from "../pics/photo-gallery/all-is-well.PNG";
 
-function MainMenu(){
+function MainMenu(props){
     const images = [
         {
           original: Pic1,
@@ -37,6 +39,7 @@ function MainMenu(){
         // },
       ];
       const videoRef = useRef();
+      const [modal, setModal] = useState(true);
       const setPlayBack = () => {
         videoRef.current.playbackRate = 0.6;
       };
@@ -85,6 +88,15 @@ function MainMenu(){
                         </div>
                         </a>
                     </figure>
+                </div>
+            </div>
+            <div className={modal ? "newPopup active" : "newPopup"} onClick={()=>setModal(false)}>
+            
+                <div className="new-album">
+                <img className="cancel" alt="Latest Album" src={cancel} onClick={()=>setModal(false)}/>  
+                    <a href="https://hypeddit.com/jordon/alliswell"><img className="newAlb" alt="Latest Album" src={FeaturedAlbum}/></a>
+                    <img className="tri" alt="Latest Album" src={triangle}/>
+                    <h2>LISTEN NOW</h2>
                 </div>
             </div>
             <div className="noise-filter"></div>
