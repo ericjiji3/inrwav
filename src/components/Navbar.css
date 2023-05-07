@@ -37,6 +37,10 @@
 .navbar-container .navbar .item a h2{
     color: white;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+.navbar-container .navbar .item h2{
+    text-shadow: 2px 2px 2px black;
 }
 .ReactModalPortal .ReactModal__Overlay{
     background-color: rgb(56 56 56 / 0%)!important;

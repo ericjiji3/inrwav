@@ -103,8 +103,8 @@
     z-index: 1;
     position: relative;
     border-top: 1px solid white;
-    width: 75%;
     margin: auto;
+    width: 60%;
 }
 .main-menu .press .press-text{
     text-align: center;
@@ -191,7 +191,7 @@
         object-fit: cover;
     }
     .main-menu .image-gallery{
-        width: 85%;
+        width: 60%;
     }
     .main-menu .featured-pic{
         width: 70%;
@@ -213,7 +213,7 @@
         height: 10rem;
     }
     .main-menu .featured-video{
-        width: 300px;
+        width: 250px;
         height: 170px;
     }
     .main-menu .press .press-figures{
