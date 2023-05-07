@@ -193,7 +193,6 @@
     background-color: #2a2a2a9a;
     z-index: 10;
     visibility: hidden;
-    transition: visibility 1s ease-in;
 }
 .main-menu .newPopup .cancel{
     position: absolute;
@@ -234,7 +233,6 @@
     color: #ffffff;
 }
 .main-menu .newPopup.active{
-    transition: visibility 1s ease-in;
     visibility: visible;
 }
 @keyframes upDown{
