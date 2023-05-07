@@ -234,11 +234,8 @@
     color: #ffffff;
 }
 .main-menu .newPopup.active{
-    
-
     opacity: 1;
     transition: opacity 1s ease-in;
-
 }
 @keyframes upDown{
     0%{

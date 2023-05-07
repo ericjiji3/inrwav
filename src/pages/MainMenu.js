@@ -4,10 +4,10 @@ import './MainMenu.css';
 import Navbar from "../components/Navbar.js";
 import ImageGallery from 'react-image-gallery';
 import Pic1 from '../pics/photo-gallery/pic1.jpg';
-// import Pic2 from '../pics/photo-gallery/pic2.jpg';
-// import Pic3 from '../pics/photo-gallery/pic3.jpg';
-// import Pic4 from '../pics/photo-gallery/pic4.jpg';
-// import Pic5 from '../pics/photo-gallery/pic5.jpg';
+import Pic2 from '../pics/photo-gallery/pic2.jpg';
+import Pic3 from '../pics/photo-gallery/pic3.jpg';
+import Pic4 from '../pics/photo-gallery/pic4.jpg';
+import Pic5 from '../pics/photo-gallery/pic5.jpg';
 import Pic7 from '../pics/photo-gallery/pic7.jpeg';
 import triangle from '../pics/triangle-icon.png';
 import cancel from '../pics/cancel.png';
@@ -21,22 +21,22 @@ function MainMenu(props){
           original: Pic1,
           thumbnail: Pic1,
         },
-        // {
-        //   original: Pic2,
-        //   thumbnail: Pic2,
-        // },
-        // {
-        //   original: Pic3,
-        //   thumbnail: Pic3,
-        // },
-        // {
-        //   original: Pic4,
-        //   thumbnail: Pic4,
-        // },
-        // {
-        //     original: Pic5,
-        //     thumbnail: Pic5,
-        // },
+        {
+          original: Pic2,
+          thumbnail: Pic2,
+        },
+        {
+          original: Pic3,
+          thumbnail: Pic3,
+        },
+        {
+          original: Pic4,
+          thumbnail: Pic4,
+        },
+        {
+            original: Pic5,
+            thumbnail: Pic5,
+        },
       ];
       const videoRef = useRef();
       const [modal, setModal] = useState(true);
@@ -50,7 +50,7 @@ function MainMenu(props){
             </video>
             <Navbar/>
             <h2 className="jordon-header">JORDON</h2>
-            <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={false}/>
+            <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={true}/>
             {/* <img className="featured-pic" alt="feature-pic" src={Pic4}/> */}
             <a className="link-album" href="https://hypeddit.com/jordon/alliswell">
                 <div className="album">
