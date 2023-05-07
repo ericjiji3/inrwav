@@ -50,7 +50,7 @@ function MainMenu(props){
             </video>
             <Navbar/>
             <h2 className="jordon-header">JORDON</h2>
-            <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={true}/>
+            <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={false}/>
             {/* <img className="featured-pic" alt="feature-pic" src={Pic4}/> */}
             <a className="link-album" href="https://hypeddit.com/jordon/alliswell">
                 <div className="album">
