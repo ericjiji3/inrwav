@@ -26,8 +26,7 @@
     color: white;
     background: #39434F;
     transition: 1s;
-    box-shadow: 6px 6px 0 #c9c9c9a4;
-    transform: skewX(-15deg);
+    box-shadow: 3px 3px 0 #c9c9c9a4;
     width: fit-content;
     align-items: center;
     margin: auto;
@@ -51,7 +50,6 @@
     margin-right: 10px;
 }
 .contact .contact-form .submit-butt span{
-    transform: skewX(15deg);
     font-family: 'recoleta-bold';
     font-size: 15px;
 }

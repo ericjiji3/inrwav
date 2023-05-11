@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import "./Shop.css";
-import rayTrace from "../pics/raytrace.mp4";
+import rayTraceCompress from "../pics/raytraceCompress.mp4";
 
 function Shop(){
     const videoRef = useRef();
@@ -11,7 +11,7 @@ function Shop(){
     return(
         <div className="shop">
             <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
-                <source src={rayTrace} type="video/mp4"/>
+                <source src={rayTraceCompress} type="video/mp4"/>
             </video>
             <h2 className="jordon-header">JORDON</h2>
             <h2>SHOP</h2>

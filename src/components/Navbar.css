@@ -55,7 +55,7 @@
     transition: 1s background-color ease;
 }
 body.ReactModal__Body--open .ReactModalPortal .sound-modal{
-    width: 35%!important;
+    width: 10%!important;
     height: fit-content;
     margin: auto;
     position: absolute;
@@ -65,7 +65,7 @@ body.ReactModal__Body--open .ReactModalPortal .sound-modal{
     overflow: auto;
     border-radius: 4px;
     outline: none;
-    padding: 50px 20px;
+    padding: 20px 25px;
     animation: popModal 1s forwards ease;
 }
 body.ReactModal__Body--open .ReactModalPortal .sound-modal.closing{
@@ -82,7 +82,7 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal{
     overflow: auto;
     border-radius: 4px;
     outline: none;
-    padding: 60px 20px;
+    padding: 20px 25px;
     animation: popModal 1s forwards ease;
 }
 body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
@@ -175,7 +175,7 @@ body.ReactModal__Body--open .ReactModalPortal .reach-modal.closing{
         font-size: 15px;
     } */
     body.ReactModal__Body--open .ReactModalPortal .sound-modal{
-        width: 70%!important;
+        width: fit-content!important;
     }
     body.ReactModal__Body--open .ReactModalPortal .reach-modal{
         width: 70%!important;
