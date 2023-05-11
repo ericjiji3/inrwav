@@ -48,7 +48,7 @@
 }
 .main-menu .link-album{
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .main-menu .link-album .album{
     display: block;

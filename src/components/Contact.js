@@ -20,9 +20,6 @@ function Contact(){
     }
 
     const sendEmail = (e) => {
-        console.log(name);
-        console.log(email);
-        console.log(message);
         e.preventDefault();
         if(name && email && message){
             emailjs.sendForm('service_2dt5qs8', 'template_puzqpvs', form.current, 'user_C7gzVm4ecUCU38p1wXg1v')
