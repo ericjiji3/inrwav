@@ -50,7 +50,7 @@ function MainMenu(props){
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
             <Navbar/>
-            <img className="jordon-header" src={chromelogo}/>
+            <img className="jordon-header" alt="oops" src={chromelogo}/>
             <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={false}/>
             {/* <img className="featured-pic" alt="feature-pic" src={Pic4}/> */}
             <a className="link-album" href="https://hypeddit.com/jordonalva/tuxedo">

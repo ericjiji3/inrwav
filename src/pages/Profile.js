@@ -15,7 +15,7 @@ function Profile(){
             <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
-            <img className="jordon-header" src={chromelogo}/>
+            <img className="jordon-header" alt="oops" src={chromelogo}/>
             <Navbar/>
             <div className="profile-container">
                 <div className="pic">

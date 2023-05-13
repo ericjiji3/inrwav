@@ -15,7 +15,7 @@ function Stages(){
             <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
-            <img className="jordon-header" src={chromelogo}/>
+            <img className="jordon-header" alt="oops" src={chromelogo}/>
             <img className="banner" alt="shows" src={Banner}/>
             <h2>COMING SOON...</h2>
             <Navbar/>

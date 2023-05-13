@@ -14,7 +14,7 @@ function Shop(){
             <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
-            <img className="jordon-header" src={chromelogo}/>
+            <img className="jordon-header" alt="oops" src={chromelogo}/>
             <h2>SHOP</h2>
             <h2>COMING SOON...</h2>
             <Navbar/>
