@@ -95,7 +95,7 @@ function MainMenu(props){
             
                 <div className="new-album">
                 <img className="cancel" alt="Latest Album" src={cancel} onClick={()=>setModal(false)}/>  
-                    <a href="https://hypeddit.com/jordon/alliswell"><img className="newAlb" alt="Latest Album" src={FeaturedAlbum}/></a>
+                    <a href="https://hypeddit.com/jordonalva/tuxedo"><img className="newAlb" alt="Latest Album" src={FeaturedAlbum}/></a>
                     <img className="tri" alt="Latest Album" src={triangle}/>
                     <h2>LISTEN NOW</h2>
                 </div>
