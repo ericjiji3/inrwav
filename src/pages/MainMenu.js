@@ -13,7 +13,8 @@ import triangle from '../pics/triangle-icon.png';
 import cancel from '../pics/cancel.png';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
-import FeaturedAlbum from "../pics/photo-gallery/all-is-well.PNG";
+import FeaturedAlbum from "../pics/photo-gallery/tuxedo.png";
+import chromelogo from "../pics/jordon-alva-chrome.png";
 
 function MainMenu(props){
     const images = [
@@ -49,10 +50,10 @@ function MainMenu(props){
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
             <Navbar/>
-            <h2 className="jordon-header">JORDON</h2>
+            <img className="jordon-header" src={chromelogo}/>
             <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={false}/>
             {/* <img className="featured-pic" alt="feature-pic" src={Pic4}/> */}
-            <a className="link-album" href="https://hypeddit.com/jordon/alliswell">
+            <a className="link-album" href="https://hypeddit.com/jordonalva/tuxedo">
                 <div className="album">
                     <div className="album-text">LATEST SOUNDS</div>
                     <img className="album-pic" alt="Latest Album" src={FeaturedAlbum}/>

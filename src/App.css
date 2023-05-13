@@ -380,6 +380,9 @@ overflow: hidden;
 .jordon-header{
   text-align: center;
   color: white;
+  width: 300px;
+  margin: 15px auto;
+  display: block;
 }
 .App .mm-noise-filter{
   position:fixed;

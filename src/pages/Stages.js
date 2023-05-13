@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.js";
 import Banner from "../pics/banner.PNG";
 import './Stages.css';
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
+import chromelogo from "../pics/jordon-alva-chrome.png";
 
 function Stages(){
     const videoRef = useRef();
@@ -14,7 +15,7 @@ function Stages(){
             <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
-            <h2 className="jordon-header">JORDON</h2>
+            <img className="jordon-header" src={chromelogo}/>
             <img className="banner" alt="shows" src={Banner}/>
             <h2>COMING SOON...</h2>
             <Navbar/>

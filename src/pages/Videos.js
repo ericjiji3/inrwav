@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
 import './Videos.css';
+import chromelogo from "../pics/jordon-alva-chrome.png";
 
 function Videos(){
     const videoRef = useRef();
@@ -13,7 +14,7 @@ function Videos(){
             <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
-            <h2 className="jordon-header">JORDON</h2>
+            <img className="jordon-header" src={chromelogo}/>
             <div className="videos-container">
                 <div className='video-text'>
                     <h3>JUNE 2022</h3>

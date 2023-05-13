@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import "./Shop.css";
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
+import chromelogo from "../pics/jordon-alva-chrome.png";
 
 function Shop(){
     const videoRef = useRef();
@@ -13,7 +14,7 @@ function Shop(){
             <video autoPlay loop muted playsInline ref={videoRef} onCanPlay={() => setPlayBack()}>
                 <source src={rayTraceCompress} type="video/mp4"/>
             </video>
-            <h2 className="jordon-header">JORDON</h2>
+            <img className="jordon-header" src={chromelogo}/>
             <h2>SHOP</h2>
             <h2>COMING SOON...</h2>
             <Navbar/>
