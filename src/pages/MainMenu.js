@@ -53,7 +53,7 @@ function MainMenu(props){
             <img className="jordon-header" alt="oops" src={chromelogo}/>
             <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={false}/>
             {/* <img className="featured-pic" alt="feature-pic" src={Pic4}/> */}
-            <a className="link-album" href="https://hypeddit.com/jordonalva/naive">
+            <a className="link-album" href="https://hypeddit.com/jordonalva/naive-1">
                 <div className="album">
                     <div className="album-text">LATEST SOUNDS</div>
                     <img className="album-pic" alt="Latest Album" src={FeaturedAlbum}/>
@@ -95,7 +95,7 @@ function MainMenu(props){
             
                 <div className="new-album">
                 <img className="cancel" alt="Latest Album" src={cancel} onClick={()=>setModal(false)}/>  
-                    <a href="https://hypeddit.com/jordonalva/naive"><img className="newAlb" alt="Latest Album" src={FeaturedAlbum}/></a>
+                    <a href="https://hypeddit.com/jordonalva/naive-1"><img className="newAlb" alt="Latest Album" src={FeaturedAlbum}/></a>
                     <img className="tri" alt="Latest Album" src={triangle}/>
                     <h2>LISTEN NOW</h2>
                 </div>
