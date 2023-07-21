@@ -4,7 +4,8 @@ import "./Shop.css";
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
 import chromelogo from "../pics/jordon-alva-chrome.png";
 
-function Shop(){
+
+export default function Shop(props){
     const videoRef = useRef();
     const setPlayBack = () => {
     videoRef.current.playbackRate = 0.6;
@@ -23,4 +24,3 @@ function Shop(){
     )
 }
 
-export default Shop;

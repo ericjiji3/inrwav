@@ -12,7 +12,7 @@ function Navbar(){
                     <h2>SOUNDS</h2>
                 </li>
                 <li className="item">
-                    <Link to="/shop"><h2>BROWSE</h2></Link>
+                    <Link to={{ pathname: "https://jordonalva.myshopify.com/" }}><h2>SHOP</h2></Link>
                 </li>
                 <li className="item">
                     <Link to="/stages"><h2>STAGES</h2></Link>

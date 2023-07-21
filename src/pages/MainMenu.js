@@ -16,7 +16,7 @@ import rayTraceCompress from "../pics/raytraceCompress.mp4";
 import FeaturedAlbum from "../pics/photo-gallery/naive.jpg";
 import chromelogo from "../pics/jordon-alva-chrome.png";
 
-function MainMenu(props){
+function MainMenu(){
     const images = [
         {
           original: Pic1,
