@@ -77,9 +77,9 @@ function Navbar(){
                 <li className="item">
                     <Link to="/videos"><h2>VISUALS</h2></Link>
                 </li>
-                <li className="item">
+                {/* <li className="item">
                     <a href="https://jordonalva.myshopify.com/"><h2>SHOP</h2></a>
-                </li>
+                </li> */}
                 <li className="item">
                     <h2 onClick={openReachModal}>REACH</h2>
                     <Modal
