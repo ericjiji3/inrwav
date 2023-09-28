@@ -59,8 +59,7 @@ function MainMenu(){
                     <img className="album-pic" alt="Latest Album" src={FeaturedAlbum}/>
                 </div>
             </a>
-            
-            <iframe className = "featured-video" src="https://www.youtube.com/embed/a6_N8gNGPPQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
+            <iframe className = "featured-video" src="https://www.youtube.com/embed/wtyENW689oE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
             <div className="press">
                 <div className='press-text'>
                     <h1>PRESS</h1>

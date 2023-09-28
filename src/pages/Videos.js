@@ -17,6 +17,11 @@ function Videos(){
             <img className="jordon-header" alt="oops" src={chromelogo}/>
             <div className="videos-container">
                 <div className='video-text'>
+                    <h3>AUGUST 2023</h3>
+                    <div className="separator"></div>
+                    <iframe className = "for-the-ride" src="https://www.youtube.com/embed/wtyENW689oE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
+                </div>
+                <div className='video-text'>
                     <h3>JUNE 2022</h3>
                     <div className="separator"></div>
                     <iframe className = "for-the-ride" src="https://www.youtube.com/embed/a6_N8gNGPPQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
