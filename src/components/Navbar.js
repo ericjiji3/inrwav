@@ -79,7 +79,6 @@ function Navbar(){
                 </li>
                 <li className="item">
                     <a href="https://jordonalva.myshopify.com/"><h2>SHOP</h2></a>
-                    {/* <Link to={{ pathname: "https://jordonalva.myshopify.com/" }}><h2>SHOP</h2></Link> */}
                 </li>
                 <li className="item">
                     <h2 onClick={openReachModal}>REACH</h2>
