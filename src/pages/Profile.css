@@ -19,7 +19,7 @@
     position: relative;
 }
 .profile .profile-container .pic{
-    width: 20%;
+    width: 50%;
     margin: auto;
 }
 .profile .profile-container .pic img{
@@ -129,8 +129,8 @@
         width: 100%;
     }
     .profile .profile-container .pic{
-        width: 100%;
-        margin: auto;
+        width: 90%;
+        margin: 0 auto;
         margin-bottom: 15px;
     }
     .profile .profile-container .pic img{

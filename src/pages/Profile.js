@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import Navbar from "../components/Navbar.js";
 import "./Profile.css";
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
-import Pic4 from '../pics/photo-gallery/pic4.jpg';
+import Pic4 from '../pics/inarush-profile.JPG';
 import chromelogo from "../pics/jordon-alva-chrome.png";
 
 function Profile(){
@@ -23,9 +23,9 @@ function Profile(){
                 </div>
                 <div className = "text">
                 <span>
-                    For Jordon, music is more than a collection of notes, it's an experience. As a child, Jordon’s love for music began in car rides with his father. Whether it was R&B/Soul icons Marvin Gaye and Sade or rock moguls Fleetwood Mac and Pink Floyd, Jordon was beginning to develop a colorful palette that would influence his musical creations. As an adolescent, artists Drake, Kid Cudi, and J. Cole helped to propel Jordon’s interest in Hip-Hop. Writing raps on notebook paper in the back of the bus, a thirteen year old Jordon's love deepened as he rediscovered music as an expression of himself. Everyday after soccer practice, Jordon could be found learning the art of production as he experimented with recording setups and music. At eighteen, Jordon had already gained a strong affinity for performing his music live. Showcasing his talents in multiple cities across Texas, his stage presence cultivated him a small but loyal following. Now Jordon's passion continues to grow with each project he creates. Jordon, reigning from Houston, Texas, dropped his new EP CHROMA on June 4th, 2021.
+                    For Jordon, music is more than a collection of notes, it's an experience. As a child, Jordon’s love for music began in car rides with his father. Whether it was R&B/Soul icons Marvin Gaye and Sade or rock moguls Fleetwood Mac and Pink Floyd, Jordon was beginning to develop a colorful palette that would influence his musical creations. As an adolescent, artists Drake, Kid Cudi, and J. Cole helped to propel Jordon’s interest in Hip-Hop. Writing raps on notebook paper in the back of the bus, a thirteen year old Jordon's love deepened as he rediscovered music as an expression of himself. Everyday after soccer practice, Jordon could be found learning the art of production as he experimented with recording setups and music. At eighteen, Jordon had already gained a strong affinity for performing his music live. Showcasing his talents in multiple cities across Texas, his stage presence cultivated him a small but loyal following. Now Jordon's passion continues to grow with each project he creates. Jordon, reigning from Houston, Texas, dropped his new EP IN A RUSH on May 14th, 2026.
                 </span>
-                <a class="cta" href="https://hypeddit.com/jordonalva/tuxedo">
+                <a class="cta" href="https://too.fm/4y1x49x?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAad3YRZrcPN8OLk5SiYqctzlWgvCdHldfuWHm3DIOsZMaRTMRMBR5VLOEebB8g_aem_Wspf4ZJrNkFsJdq-LCcVHA">
                     <span>LISTEN NOW</span>
                     <span>
                         <svg width="40px" height="15px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" >

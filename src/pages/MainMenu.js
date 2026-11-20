@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import './MainMenu.css';
 import Navbar from "../components/Navbar.js";
 import ImageGallery from 'react-image-gallery';
-import Pic1 from '../pics/photo-gallery/pic1.jpg';
+import Pic1 from '../pics/inarush-home2.jpg';
 import Pic2 from '../pics/photo-gallery/pic2.jpg';
 import Pic3 from '../pics/photo-gallery/pic3.jpg';
 import Pic4 from '../pics/photo-gallery/pic4.jpg';
 import Pic5 from '../pics/photo-gallery/pic5.jpg';
-import Pic7 from '../pics/photo-gallery/pic7.jpeg';
+import Pic7 from '../pics/inarush-home.JPG';
 import triangle from '../pics/triangle-icon.png';
 import cancel from '../pics/cancel.png';
 import Podcast from '../pics/photo-gallery/podcast.jpeg';
 import rayTraceCompress from "../pics/raytraceCompress.mp4";
-import FeaturedAlbum from "../pics/photo-gallery/naive.jpg";
+import FeaturedAlbum from "../pics/inarush.jpg";
 import chromelogo from "../pics/jordon-alva-chrome.png";
 
 function MainMenu(){
@@ -21,23 +21,7 @@ function MainMenu(){
         {
           original: Pic1,
           thumbnail: Pic1,
-        },
-        {
-          original: Pic2,
-          thumbnail: Pic2,
-        },
-        {
-          original: Pic3,
-          thumbnail: Pic3,
-        },
-        {
-          original: Pic4,
-          thumbnail: Pic4,
-        },
-        {
-            original: Pic5,
-            thumbnail: Pic5,
-        },
+        }
       ];
       const videoRef = useRef();
       const [modal, setModal] = useState(true);
@@ -53,13 +37,13 @@ function MainMenu(){
             <img className="jordon-header" alt="oops" src={chromelogo}/>
             <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} autoPlay={false} showThumbnails={false}/>
             {/* <img className="featured-pic" alt="feature-pic" src={Pic4}/> */}
-            <a className="link-album" href="https://hypeddit.com/jordonalva/naive-1">
+            <a className="link-album" href="https://too.fm/4y1x49x?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAad3YRZrcPN8OLk5SiYqctzlWgvCdHldfuWHm3DIOsZMaRTMRMBR5VLOEebB8g_aem_Wspf4ZJrNkFsJdq-LCcVHA">
                 <div className="album">
                     <div className="album-text">LATEST SOUNDS</div>
                     <img className="album-pic" alt="Latest Album" src={FeaturedAlbum}/>
                 </div>
             </a>
-            <iframe className = "featured-video" src="https://www.youtube.com/embed/wtyENW689oE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
+            <iframe className = "featured-video" src="https://www.youtube.com/embed/9xuEKfthYzI" title="Jordon Alva - Gray" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="allowfullscreen"></iframe>
             <div className="press">
                 <div className='press-text'>
                     <h1>PRESS</h1>
@@ -94,7 +78,7 @@ function MainMenu(){
             
                 <div className="new-album">
                 <img className="cancel" alt="Latest Album" src={cancel} onClick={()=>setModal(false)}/>  
-                    <a href="https://hypeddit.com/jordonalva/naive-1"><img className="newAlb" alt="Latest Album" src={FeaturedAlbum}/></a>
+                    <a href="https://too.fm/4y1x49x?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAad3YRZrcPN8OLk5SiYqctzlWgvCdHldfuWHm3DIOsZMaRTMRMBR5VLOEebB8g_aem_Wspf4ZJrNkFsJdq-LCcVHA"><img className="newAlb" alt="Latest Album" src={FeaturedAlbum}/></a>
                     <img className="tri" alt="Latest Album" src={triangle}/>
                     <h2>LISTEN NOW</h2>
                 </div>

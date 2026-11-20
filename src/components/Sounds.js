@@ -13,13 +13,13 @@ function Sounds(){
         <div className="sounds">
             <h2>LISTEN ON:</h2>
             <div className="social-container">
-                <a className = "link spotify" href = "https://open.spotify.com/album/1lw5aOFuo6DEj6QkyO8gKJ">
+                <a className = "link spotify" href = "https://open.spotify.com/album/2Pf8pc75xx8qTnHLPUWGeE?si=-TUdJVSkReq_vhz4zl9MTw">
                     <FontAwesomeIcon icon={faSpotify} size = "3x"/>
                 </a>
-                <a className = "link apple" href = "https://music.apple.com/us/album/naive/1695744610">
+                <a className = "link apple" href = "https://music.apple.com/us/album/in-a-rush-ep/1896357636">
                 <FontAwesomeIcon icon={faApple} size = "3x"/>
                 </a>
-                <a className = "link youtube" href = "https://www.youtube.com/channel/UCSO0_aUhJ-nIfZtXJoWAQgg">
+                <a className = "link youtube" href = "https://www.youtube.com/playlist?list=OLAK5uy_lhLziU3tnCFyekffSI3P6SRbbdx_lA6YM">
                 <FontAwesomeIcon icon={faYoutube} size = "3x"/>
                 </a>
             </div>
